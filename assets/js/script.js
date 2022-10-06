@@ -135,12 +135,18 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log("cardOne:", cardOne)
         console.log("cardTwo:", cardTwo)
 
+    /**
+     * if statement to check cards and load img accordingly
+     */
         if(cardOne === cardTwo) {
             cards[cardOneId].setAttribute('src', 'assets/images/bw_heart.png')
-            cards[cardOneId].setAttribute('src', 'assets/images/bw_heart.png')
+            cards[cardTwoId].setAttribute('src', 'assets/images/bw_heart.png')
             cardScore.push(cardOneId)
             cardScore.push(cardTwoId)
-    }
+        } else {
+            cards[cardOneId].setAttribute('src', 'assets/images/background.png')
+            cards[cardTwoId].setAttribute('src', 'assets/images/background.png')
+        }  
 
     }
 
