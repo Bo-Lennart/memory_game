@@ -21,6 +21,11 @@ document.addEventListener('DOMContentLoaded'), () => {
     ]
 
     function callDeck() {
+        for (let card in callDeck) {
+            var gameCard = document.createElement('img');
+            gameCard.setAttribute('card_id', card)
+            grid.appendChild(card);
+        }
     }
 
     function checkForMatch() {
