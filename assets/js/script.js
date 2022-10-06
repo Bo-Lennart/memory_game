@@ -136,12 +136,12 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log("cardTwo:", cardTwo)
 
         if(cardOne === cardTwo) {
-            cards[cardOneId].hidden
-            cards[cardOneId].hidden
+            cards[cardOneId].setAttribute('src', 'assets/images/bw_heart.png')
+            cards[cardOneId].setAttribute('src', 'assets/images/bw_heart.png')
             cardScore.push(cardOneId)
             cardScore.push(cardTwoId)
     }
-    
+
     }
 
 
