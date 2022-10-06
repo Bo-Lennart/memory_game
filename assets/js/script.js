@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     ]
     
-    const gameBoard = document.getElementById('game_field')
+    const gameBoard = document.getElementById('game_body')
 
     function callDeck() {
         for (let img in cardDeck) {

@@ -1,5 +1,19 @@
-#test_id {
-    width: 100px;
-    height: 100px;
-    background-color: black;
+body {
+    text-align: center;
+}
+
+#game_body {
+    width: 900px;
+    height: 100%;
+    margin: 0% auto;
+}
+
+#game_field {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    height: 200px;
+    width: 200px;
 }
