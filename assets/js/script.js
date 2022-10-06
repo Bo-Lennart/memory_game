@@ -88,16 +88,13 @@ document.addEventListener('DOMContentLoaded', () => {
             var card = document.createElement('img')
             card.setAttribute('src', 'assets/images/background.png')
             card.setAttribute('data-id', img)
-            gameBoard.appendChild(card)
             card.addEventListener('click', turnCard)
+            gameBoard.appendChild(card)
         }
     }
 
     let pickedCard = []
     let pickedCardId = []
-    
-    let cardScore = []
-    const scoreDisplay = document.getElementById('score')
 
     /**
      * turn card function
@@ -118,6 +115,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+
+    let cardScore = []
+    const scoreDisplay = document.getElementById('score')
 
     /**
      * function to check for match
@@ -150,6 +150,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }  
     
         scoreDisplay.textContent = cardScore.length
+        pickedCard = []
+        pickedCardId = []
+
     }
 
 
