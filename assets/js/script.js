@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             card: 'card8',
             img: 'assets/images/yoda.png'
-        }
+        },
         {
             card: 'card8',
             img: 'assets/images/yoda.png'
