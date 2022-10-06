@@ -149,6 +149,9 @@ document.addEventListener('DOMContentLoaded', () => {
             cards[cardTwoId].setAttribute('src', 'assets/images/background.png')
         }  
     
+        /**
+         * add score inside card score and reset array length to run turnCard function again
+         */
         scoreDisplay.textContent = cardScore.length
         pickedCard = []
         pickedCardId = []
