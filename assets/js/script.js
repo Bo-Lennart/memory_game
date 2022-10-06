@@ -1,3 +1,15 @@
-let testId = document.getElementById('test_id');
+const cardDeck = [
 
-testId.addEventListener('click', () => document.body.style.backgroundColor = "blue");
+]
+
+function callDeck() {
+
+}
+
+function checkForMatch() {
+
+}
+
+function turnCard() {
+
+}
