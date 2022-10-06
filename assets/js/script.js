@@ -117,6 +117,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+
+    /**
+     * function to check for match
+     */
     function checkForMatch() {
         var cards = document.getElementsByTagName('img')
         const cardOneId = pickedCardId[0]
@@ -130,6 +134,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         console.log("cardOne:", cardOne)
         console.log("cardTwo:", cardTwo)
+
+        if(cardOne === cardTwo) {
+            cards[cardOneId].hidden
+            cards[cardOneId].hidden
+            cardScore.push(cardOneId)
+            cardScore.push(cardTwoId)
+    }
+    
     }
 
 
