@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded'), () => {
+document.addEventListener('DOMContentLoaded', () => {
 
 // Memory game deck options
     const cardDeck = [
@@ -45,11 +45,15 @@ document.addEventListener('DOMContentLoaded'), () => {
 
     ]
     
-    const grid = document.getElementsByClassName('game_field');
-
-    
+    const gameBoard = document.getElementById('game_field')
 
     function callDeck() {
+        for (let img in cardDeck) {
+            var card = document.createElement('img')
+            card.setAttribute('src', 'assets/images/background.png')
+            card.setAttribute('data-id', img)
+            gameBoard.appendChild(card)
+        }
     }
 
     function checkForMatch() {
@@ -64,4 +68,4 @@ document.addEventListener('DOMContentLoaded'), () => {
 
     callDeck()
 
-}
+})
