@@ -79,7 +79,6 @@ document.addEventListener('DOMContentLoaded', () => {
     ]
     
     const gameBoard = document.getElementById('game_body')
-    
 
     /**
      * Create game board out of cardDeck array
@@ -96,7 +95,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let pickedCard = []
     let pickedCardId = []
+    
     let cardScore = []
+    const scoreDisplay = document.getElementById('score')
 
     /**
      * turn card function
@@ -147,7 +148,8 @@ document.addEventListener('DOMContentLoaded', () => {
             cards[cardOneId].setAttribute('src', 'assets/images/background.png')
             cards[cardTwoId].setAttribute('src', 'assets/images/background.png')
         }  
-
+    
+        scoreDisplay.textContent = cardScore.length
     }
 
 
