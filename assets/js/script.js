@@ -1,15 +1,22 @@
-const cardDeck = [
+document.addEventListener('DOMContentLoaded'), () => {
 
-]
 
-function callDeck() {
+    const cardDeck = [
 
-}
+    ]
 
-function checkForMatch() {
+    function callDeck() {
 
-}
+    }
 
-function turnCard() {
+    function checkForMatch() {
+
+    }
+
+    function turnCard() {
+
+    }
+
+callDeck()
 
 }
