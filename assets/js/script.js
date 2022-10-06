@@ -40,17 +40,21 @@ document.addEventListener('DOMContentLoaded'), () => {
         {
             card: 'card8'
             img: './memory_game/assets/images/yoda.png'
-        },
+        }
 
     ]
 
+    const grid = document.getElementsByClassName('game_field');
+
     function callDeck() {
-        for (let card in callDeck) {
+        for (let i = 0; i <cardDeck.length; i++ ) {
             var gameCard = document.createElement('img');
-            gameCard.setAttribute('card_id', card)
-            grid.appendChild(card);
+            gameCard.setAttribute('src', '/assets/images.png');
+            gameCard.setAttribute('card_id', card);
+            grid.appendChild(gameCard); 
         }
     }
+
 
     function checkForMatch() {
 
