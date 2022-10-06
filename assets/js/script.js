@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
      */
 
     function turnCard() {
-        if (pickedCardId < 2) {
+        if (pickedCardId.length < 2) {
             var cardId = this.getAttribute('data-id')
             console.log(pickedCardId);
         }
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pickedCardId.push(cardId)
             this.setAttribute('src', cardDeck[cardId].img)
         }
-        if (pickedCard.length < 2) {
+        if (pickedCard.length === 2) {
             checkForMatch()
         }
     }
