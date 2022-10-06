@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log(pickedCardId);
         }
         if (!pickedCardId.includes(cardId) && !cardScore.includes(cardId)) {
-            pickedCard.push(callDeck[cardId])
+            pickedCard.push(cardDeck[cardId].name)
             pickedCardId.push(cardId)
             this.setAttribute('src', cardDeck[cardId].img)
         }
@@ -118,7 +118,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function checkForMatch() {
-        
+        var cards = document.getElementsByTagName('img')
+        const cardOneId = pickedCardId[0]
+        const cardTwoId = pickedCardId[1]
+
+        console.log("cardOneId:", cardOneId)
+        console.log("cardOneId:", cardTwoId)
+
+        const cardOne = pickedCard[0]
+        const cardTwo = pickedCard[1]
+
+        console.log("cardOne:", cardOne)
+        console.log("cardTwo:", cardTwo)
     }
 
 
