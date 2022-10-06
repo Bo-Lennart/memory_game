@@ -3,76 +3,76 @@ document.addEventListener('DOMContentLoaded', () => {
 // Memory game deck options
     const cardDeck = [
         {
-            card: 'card1',
+            name: 'card1',
             img: 'assets/images/alarm_clock.png'
         },
         {
-            card: 'card1',
+            name: 'card1',
             img: 'assets/images/alarm_clock.png'
         },
         
         {
-            card: 'card2',
+            name: 'card2',
             img: 'assets/images/camera.png'
 
         },
         {
-            card: 'card2',
+            name: 'card2',
             img: 'assets/images/camera.png'
 
         },
         
         {
-            card: 'card3',
+            name: 'card3',
             img: 'assets/images/envelope.png'
         },
         {
-            card: 'card3',
+            name: 'card3',
             img: 'assets/images/envelope.png'
         },
 
         {
-            card: 'card4',
+            name: 'card4',
             img: 'assets/images/smiley.png'
         },
         {
-            card: 'card4',
+            name: 'card4',
             img: 'assets/images/smiley.png'
         },
 
         {
-            card: 'card5',
+            name: 'card5',
             img: 'assets/images/soup.png'
         },
         {
-            card: 'card5',
+            name: 'card5',
             img: 'assets/images/soup.png'
         },
 
         {
-            card: 'card6',
+            name: 'card6',
             img: 'assets/images/timer.png'
         },
         {
-            card: 'card6',
+            name: 'card6',
             img: 'assets/images/timer.png'
         },
 
         {
-            card: 'card7',
+            name: 'card7',
             img: 'assets/images/water_drop.png'
         },
         {
-            card: 'card7',
+            name: 'card7',
             img: 'assets/images/water_drop.png'
         },
 
         {
-            card: 'card8',
+            name: 'card8',
             img: 'assets/images/yoda.png'
         },
         {
-            card: 'card8',
+            name: 'card8',
             img: 'assets/images/yoda.png'
         }
 
@@ -90,6 +90,30 @@ document.addEventListener('DOMContentLoaded', () => {
             card.setAttribute('src', 'assets/images/background.png')
             card.setAttribute('data-id', img)
             gameBoard.appendChild(card)
+            card.addEventListener('click', turnCard)
+        }
+    }
+
+    let pickedCard = []
+    let pickedCardId = []
+    let cardScore = []
+
+    /**
+     * turn card function
+     */
+
+    function turnCard() {
+        if (pickedCardId < 2) {
+            var cardId = this.getAttribute('data-id')
+            console.log(pickedCardId);
+        }
+        if (!pickedCardId.includes(cardId) && !cardScore.includes(cardId)) {
+            pickedCard.push(callDeck[cardId])
+            pickedCardId.push(cardId)
+            this.setAttribute('src', cardDeck[cardId].img)
+        }
+        if (pickedCard.length < 2) {
+            checkForMatch()
         }
     }
 
@@ -97,9 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
     }
 
-    function turnCard() {
 
-    }
 
 
     callDeck()
