@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded'), () => {
             card: 'card2',
             img: '.assets/images/camera.png',
 
+        },
+        
         {
             card: 'card3',
             img: '.assets/images/envelope.png',
