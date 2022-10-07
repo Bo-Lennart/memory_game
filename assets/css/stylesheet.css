@@ -9,13 +9,28 @@ body {
 
 #game_body {
     height: 775px;
-    width: 775px;;
+    width: 575px;;
     margin: 0% auto;
 }
 
 #game_field {
     display: flex;
     flex-wrap: wrap;
+}
+
+img {
+    height: 140px;
+    width: 140px;
+    margin: 1%;
+    border-radius: 10%;
+}
+
+@media screen and (max-width: 550px)  {
+    #game_body {
+        height: 975px;
+        width: 545px;;
+        margin: 0% auto;
+    }
 }
 
 img {
