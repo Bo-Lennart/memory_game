@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (cardScore.length === 2) {
             document.getElementById('game_body').style.display = 'none';
 
-            var newGame = document.createElement('type', 'button')
+            var newGame = document.createElement('button')
             newGame.innerHTML = "Restart"
 
             var body = document.getElementById('call_for_reload')
