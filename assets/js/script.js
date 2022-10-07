@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
         /**
          * When game is done. Hide game board
          */
-        if (cardScore.length === 2) {
+        if (cardScore.length === 2 || attempts === 1) {
             document.getElementById('game_body').style.display = 'none';
 
             var newGame = document.createElement('button')
@@ -189,6 +189,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
 
+
+    let attempts = parseInt(document.getElementById('attempts').innerText);
 
     /**
      * function to incement amount of attempts and update for each "checkForMatch()" that's run, onto html id="attempts"
