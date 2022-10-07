@@ -164,8 +164,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
         incrementAttempts()
 
+        /**
+         * When game is done. Hide game board
+         */
         if (cardScore.length === 2) {
             document.getElementById('game_body').style.display = 'none';
+
+            var newGame = document.createElement('type', 'button')
+            newGame.innerHTML = "Restart"
+
+            var body = document.getElementsByTagName('body')
+            body.appendChild(newGame)
+
+            newGame.addEventListener('click', refreshPage)
+            
+            function refreshPage(){
+                window.location.reload()
+            }
         }
 
     }
