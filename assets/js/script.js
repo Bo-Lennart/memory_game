@@ -158,11 +158,11 @@ document.addEventListener('DOMContentLoaded', () => {
         /**
          * add score inside card score and reset array length to run turnCard function again
          */
-        incrementAttempts()
-
         scoreDisplay.textContent = cardScore.length
         pickedCard = []
         pickedCardId = []
+
+        incrementAttempts()
 
     }
 
