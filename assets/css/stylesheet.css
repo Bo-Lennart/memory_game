@@ -24,8 +24,14 @@ p {
     margin-top: 0;
 }
 
+#rules {
+    border: none;
+    width: 150px;
+    text-align: left;
+    font-size: 15px;
+}
+
 #game_body {
-    height: 775px;
     width: 575px;
     margin: 0% auto;
 }
@@ -66,7 +72,7 @@ img:hover {
     }
     
     #game_body {
-        height: 975px;
+        height: 445;
         width: 445px;
     }
 
