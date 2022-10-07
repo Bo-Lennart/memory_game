@@ -93,6 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
             var card = document.createElement('img')
             card.setAttribute('src', 'assets/images/background.png')
             card.setAttribute('data-id', img)
+            card.classList.add('card_styling')
             card.addEventListener('click', turnCard)
             gameBoard.appendChild(card)
         }

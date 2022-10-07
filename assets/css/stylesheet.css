@@ -9,7 +9,7 @@ body {
 
 #game_body {
     height: 775px;
-    width: 575px;;
+    width: 575px;
     margin: 0% auto;
 }
 
@@ -19,8 +19,8 @@ body {
 }
 
 img {
-    height: 170px;
-    width: 170px;
+    max-width: 140px;
+    height: auto;
     margin: 1%;
     border-radius: 10%;
 }
@@ -34,11 +34,6 @@ img {
         height: 975px;
         width: 545px;;
     }
-}
-
-img {
-    height: 110px;
-    width: 110px;
 }
 
 @media screen and (max-width: 450px)  {
