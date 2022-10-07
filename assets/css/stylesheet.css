@@ -7,10 +7,6 @@ body {
     font-size: 60px;
 }
 
-#new_game_button {
-    font-family: 'VT323', monospace;
-}
-
 #game_body {
     height: 775px;
     width: 575px;;
@@ -23,32 +19,30 @@ body {
 }
 
 img {
-    height: 140px;
-    width: 140px;
+    height: 170px;
+    width: 170px;
     margin: 1%;
     border-radius: 10%;
 }
 
-@media screen and (max-width: 550px)  {
+@media screen and (max-width: 650px)  {
+    body {
+        font-size: 35px;
+    }
+    
     #game_body {
         height: 975px;
         width: 545px;;
-        margin: 0% auto;
     }
 }
 
 img {
-    height: 120px;
-    width: 120px;
-    margin: 1%;
-    border-radius: 10%;
+    height: 110px;
+    width: 110px;
 }
 
 @media screen and (max-width: 450px)  {
     body {
-        text-align: center;
-        background-color: bisque;
-        font-family: 'VT323', monospace;
         font-size: 30px;
     }
 
@@ -62,7 +56,5 @@ img {
     img {
         height: 75px;
         width: 75px;
-        margin: 1%;
-        border-radius: 10%;
     }
 }
