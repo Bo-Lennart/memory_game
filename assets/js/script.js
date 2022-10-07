@@ -174,20 +174,20 @@ document.addEventListener('DOMContentLoaded', () => {
          */
         if (cardScore.length === 2 || attempts === 1) {
             document.getElementById('game_body').style.display = 'none';
-
+            /**
+             * creates button element with styling in html element that refreshes page when clicked
+             */
             var newGame = document.createElement('button')
                 newGame.classList.add("new_game_button")
                 newGame.setAttribute(
                     'style',
-                    'height: 200px; width: 200px; background-color: black; color: red; font-size: 50px; margin-top: 25%; border-radius: 10%; font-family: VT323, monospace;'
+                    'height: 200px; width: 200px; background-color: black; color: red; font-size: 65px; margin-top: 25%; border-radius: 10%; font-family: VT323, monospace;'
                 );
             newGame.innerHTML = "New Game"
-
             var body = document.getElementById('call_for_reload')
             body.appendChild(newGame)
-
             newGame.addEventListener('click', refreshPage)
-          
+
             function refreshPage(){
                 window.location.reload()
             }
