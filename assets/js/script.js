@@ -165,6 +165,11 @@ document.addEventListener('DOMContentLoaded', () => {
         incrementAttempts()
 
         /**
+         * read what text is displayed inside attempts, return as a number for endGame to trigger
+         */
+        let attempts = parseInt(document.getElementById('attempts').innerText);
+
+        /**
          * When game is done. Hide game board
          */
         if (cardScore.length === 2 || attempts === 1) {
@@ -173,7 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
             var newGame = document.createElement('button')
                 newGame.setAttribute(
                     'style',
-                    'height: 500px; width: 500px; background-color: red;'
+                    'height: 200px; width: 200px; background-color: black; color: red; font-size: 50px; margin-top: 25%; border-radius: 10%;'
                 );
             newGame.innerHTML = "Restart"
 
@@ -188,9 +193,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
     }
-
-
-    let attempts = parseInt(document.getElementById('attempts').innerText);
 
     /**
      * function to incement amount of attempts and update for each "checkForMatch()" that's run, onto html id="attempts"
