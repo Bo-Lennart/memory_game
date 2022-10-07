@@ -147,8 +147,8 @@ document.addEventListener('DOMContentLoaded', () => {
      * if statement to check cards and load img accordingly
      */
         if(cardOne === cardTwo) {
-            cards[cardOneId].setAttribute('src', 'assets/images/bw_heart.png')
-            cards[cardTwoId].setAttribute('src', 'assets/images/bw_heart.png')
+            cards[cardOneId].setAttribute('src', 'assets/images/bw_backgroound.png')
+            cards[cardTwoId].setAttribute('src', 'assets/images/bw_backgroound.png')
             cardScore.push(cardOneId)
             cardScore.push(cardTwoId)
         } else {
@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
         /**
          * When game is done. Hide game board
          */
-        if (cardScore.length === 2 || attempts === 1) {
+        if (cardScore.length === 4 || attempts === 10) {
             document.getElementById('game_body').style.display = 'none';
             /**
              * creates button element with styling in html element that refreshes page when clicked

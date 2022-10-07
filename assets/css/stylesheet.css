@@ -29,7 +29,7 @@ p {
 
 button:hover {
     transform: translateY(-7px);
-  }
+}
 
 #game_field {
     display: flex;
@@ -60,7 +60,9 @@ img {
 
     img {
         max-width: 100px;
-        height: auto;
+        height: 100;
+        size: cover;
+        background-position: center;
     }
 }
 
