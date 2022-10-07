@@ -173,11 +173,13 @@ document.addEventListener('DOMContentLoaded', () => {
         /**
          * When game is done. Hide game board
          */
-        if (cardScore.length === 16 || attempts === 20) {
+        if (cardScore.length === 16 || attempts === 2) {
             document.getElementById('game_body').style.display = 'none';
 
-            if(attempts === 20) {
+            if(attempts === 2) {
                 alert('You lost :( Game Over!')
+                body = document.getElementById('call_for_reload')
+                body.setAttribute('style', 'background-color: red;')
             } else {
                 alert('Congrats!!! You Won!')
             }
