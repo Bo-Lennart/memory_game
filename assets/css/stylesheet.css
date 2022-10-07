@@ -7,6 +7,10 @@ body {
     font-size: 60px;
 }
 
+#new_game_button {
+    font-family: 'VT323', monospace;
+}
+
 #game_body {
     height: 775px;
     width: 575px;;

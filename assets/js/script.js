@@ -176,9 +176,10 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('game_body').style.display = 'none';
 
             var newGame = document.createElement('button')
+                newGame.classList.add("new_game_button")
                 newGame.setAttribute(
                     'style',
-                    'height: 200px; width: 200px; background-color: black; color: red; font-size: 50px; margin-top: 25%; border-radius: 10%;'
+                    'height: 200px; width: 200px; background-color: black; color: red; font-size: 50px; margin-top: 25%; border-radius: 10%; font-family: VT323, monospace;'
                 );
             newGame.innerHTML = "New Game"
 
@@ -186,7 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
             body.appendChild(newGame)
 
             newGame.addEventListener('click', refreshPage)
-            
+          
             function refreshPage(){
                 window.location.reload()
             }
