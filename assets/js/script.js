@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
             var newGame = document.createElement('type', 'button')
             newGame.innerHTML = "Restart"
 
-            var body = document.getElementsByTagName('body')
+            var body = document.getElementById('call_for_reload')
             body.appendChild(newGame)
 
             newGame.addEventListener('click', refreshPage)
