@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 body {
     text-align: center;
     background-color: bisque;
@@ -19,8 +21,4 @@ img {
     width: 140px;
     margin: 1%;
     border-radius: 10%;
-}
-
-button {
-    font size: 300px;
 }
