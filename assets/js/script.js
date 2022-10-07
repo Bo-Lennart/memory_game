@@ -164,12 +164,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
         incrementAttempts()
 
+        if (cardScore.length === 2) {
+            document.getElementById('gamebody').style.display = 'none';
+        }
+
     }
 
+
+    /**
+     * function to incement amount of attempts and update for each "checkForMatch()" that's run, onto html id="attempts"
+     */
     function incrementAttempts () {
         let oldAttempts = parseInt(document.getElementById('attempts').innerText);
         document.getElementById('attempts').innerText = ++oldAttempts;
     }
+
+
+    
 
     callDeck()
     
