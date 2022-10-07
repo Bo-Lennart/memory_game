@@ -180,7 +180,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     'style',
                     'height: 200px; width: 200px; background-color: black; color: red; font-size: 50px; margin-top: 25%; border-radius: 10%;'
                 );
-            newGame.innerHTML = "Restart"
+            newGame.innerHTML = "New Game"
 
             var body = document.getElementById('call_for_reload')
             body.appendChild(newGame)
