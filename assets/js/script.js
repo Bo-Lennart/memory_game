@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
         incrementAttempts()
 
         if (cardScore.length === 2) {
-            document.getElementById('gamebody').style.display = 'none';
+            document.getElementById('game_body').style.display = 'none';
         }
 
     }
