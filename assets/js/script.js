@@ -173,15 +173,17 @@ document.addEventListener('DOMContentLoaded', () => {
         /**
          * When game is done. Hide game board
          */
-        if (cardScore.length === 16 || attempts === 2) {
+        if (cardScore.length === 2 || attempts === 20) {
             document.getElementById('game_body').style.display = 'none';
 
-            if(attempts === 2) {
+            if(attempts === 20) {
                 alert('You lost :( Game Over!')
                 body = document.getElementById('call_for_reload')
-                body.setAttribute('style', 'background-color: red;')
+                body.setAttribute('style', 'background-color: #9e2a2b;')
             } else {
                 alert('Congrats!!! You Won!')
+                body = document.getElementById('call_for_reload')
+                body.setAttribute('style', 'background-color: #aaf683;')
             }
             /**
              * creates button element with styling in html element that refreshes page when clicked
