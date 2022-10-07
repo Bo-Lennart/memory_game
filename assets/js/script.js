@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 newGame.classList.add("new_game_button")
                 newGame.setAttribute(
                     'style',
-                    'height: 100px; width: 100px; background-color: black; color: red; font-size: 35px; margin-top: 10%; border-radius: 10%; font-family: VT323, monospace;'
+                    'height: 100px; width: 100px; background-color: black; color: red; font-size: 25px; margin-top: 10%; border-radius: 10%; font-family: Major Mono Display, monospace;'
                 );
             newGame.innerHTML = "New Game"
             var body = document.getElementById('call_for_reload')
