@@ -4,8 +4,21 @@ body {
     text-align: center;
     background-color: #839588;
     font-family: 'Share Tech Mono', monospace;
-    color: #ffffff;
-    font-size: 50px;
+    color: #000000;
+    font-size: 40px;
+    position: center;
+}
+
+#text_board {
+    position: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 25%;
+}
+
+p {
+    border: #ffffff solid 2px;
+    width: 95%;
 }
 
 #game_body {
