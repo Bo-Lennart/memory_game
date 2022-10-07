@@ -10,13 +10,14 @@ body {
 }
 
 #text_board {
-    position: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: 0 25%;
 }
 
 p {
+    max-width: 100%;
     border: #ffffff solid 2px;
     width: 100%;
 }
