@@ -171,6 +171,10 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('game_body').style.display = 'none';
 
             var newGame = document.createElement('button')
+                newGame.setAttribute(
+                    'style',
+                    'height: 500px; width: 500px; background-color: red;'
+                );
             newGame.innerHTML = "Restart"
 
             var body = document.getElementById('call_for_reload')
