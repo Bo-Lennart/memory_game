@@ -124,8 +124,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let cardScore = []
     const scoreDisplay = document.getElementById('score')
-    const attempts = document.getElementById('attempts')
-
 
     /**
      * function to check for match
@@ -155,21 +153,23 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             cards[cardOneId].setAttribute('src', 'assets/images/background.png')
             cards[cardTwoId].setAttribute('src', 'assets/images/background.png')
-            attempts.textContent = parseInt.attempts + 1;
         }  
     
         /**
          * add score inside card score and reset array length to run turnCard function again
          */
+        incrementAttempts()
+
         scoreDisplay.textContent = cardScore.length
         pickedCard = []
         pickedCardId = []
 
     }
 
-
-
-
+    function incrementAttempts () {
+        let oldAttempts = parseInt(document.getElementById('attempts').innerText);
+        document.getElementById('attempts').innerText = ++oldAttempts;
+    }
 
     callDeck()
     
