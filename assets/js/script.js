@@ -78,6 +78,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     ]
     
+    /**
+     * randomize order of cardDeck array
+     */
+     cardDeck.sort(() => 0.5 - Math.random())
+
     const gameBoard = document.getElementById('game_body')
 
     /**
@@ -163,5 +168,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     callDeck()
+    
 
 })
