@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
 body {
     text-align: center;
-    background-color: #52796f;
-    font-family: 'Indie Flower', cursive;
-    color: #cad2c5;
+    background-color: #839588;
+    font-family: 'Share Tech Mono', monospace;
+    color: #ffffff;
     font-size: 50px;
 }
 
