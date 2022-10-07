@@ -39,3 +39,26 @@ img {
     margin: 1%;
     border-radius: 10%;
 }
+
+@media screen and (max-width: 450px)  {
+    body {
+        text-align: center;
+        background-color: bisque;
+        font-family: 'VT323', monospace;
+        font-size: 30px;
+    }
+
+    #game_body {
+        height: 100%;
+        width: 305px;;
+        margin: 0% auto;
+    }
+
+
+    img {
+        height: 75px;
+        width: 75px;
+        margin: 1%;
+        border-radius: 10%;
+    }
+}
