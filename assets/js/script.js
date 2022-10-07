@@ -111,8 +111,9 @@ document.addEventListener('DOMContentLoaded', () => {
             this.setAttribute('src', cardDeck[cardId].img)
         }
         if (pickedCard.length === 2) {
-            checkForMatch()
+            setTimeout(checkForMatch, 500)
         }
+
     }
 
 
