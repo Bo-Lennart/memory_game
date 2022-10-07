@@ -2,6 +2,7 @@
 
 body {
     text-align: center;
+    justify-content: center;
     background-color: #839588;
     font-family: 'Share Tech Mono', monospace;
     color: #000000;
@@ -26,9 +27,11 @@ p {
 
 #rules {
     border: none;
-    width: 150px;
     text-align: left;
-    font-size: 15px;
+    font-size: 17px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 #game_body {
@@ -81,6 +84,15 @@ img:hover {
         height: 100;
         size: cover;
         background-position: center;
+    }
+
+    #rules {
+        font-size: 14px;
+    }
+
+    img:hover {
+        transform: none;
+        box-shadow: none;
     }
 }
 
