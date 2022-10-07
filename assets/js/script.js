@@ -173,8 +173,14 @@ document.addEventListener('DOMContentLoaded', () => {
         /**
          * When game is done. Hide game board
          */
-        if (cardScore.length === 4 || attempts === 10) {
+        if (cardScore.length === 16 || attempts === 20) {
             document.getElementById('game_body').style.display = 'none';
+
+            if(attempts === 20) {
+                alert('You lost :( Game Over!')
+            } else {
+                alert('Congrats!!! You Won!')
+            }
             /**
              * creates button element with styling in html element that refreshes page when clicked
              */
@@ -192,6 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
             function refreshPage(){
                 window.location.reload()
             }
+        
         }
 
     }
