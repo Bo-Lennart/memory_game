@@ -100,8 +100,8 @@ img:hover {
 /* styling for footer and social links - 'The code is taken from previous project portfolio project "Dinder" */
 footer {
     height: 40px;
-    display: inline;
     text-align: center;
+    margin-top: 10%;
 }
 
 footer ul li {
