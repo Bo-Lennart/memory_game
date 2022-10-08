@@ -1,9 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    const startGame = document.getElementById('start_game')
-    
-    callDeck();
-
     // Memory game deck options
     const cardDeck = [{
             name: 'card1',
@@ -225,7 +221,8 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('attempts').innerText = ++oldAttempts;
     }
 
-
+    const startGame = document.getElementById('start_game');
+    startGame.addEventListener('click', callDeck);
 
 
 });
