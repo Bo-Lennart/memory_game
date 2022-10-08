@@ -272,7 +272,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function callDeck() {
         for (let img in cardDeck) {
             var card = document.createElement('img');
-            card.setAttribute('src', 'assets/images/background.png');
+            card.setAttribute('src', 'assets/images/brew.png');
             card.setAttribute('data-id', img);
             card.classList.add('card_styling');
             card.addEventListener('click', turnCard);
@@ -298,7 +298,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function callDeck3() {
         for (let img in cardDeck3) {
             var card = document.createElement('img');
-            card.setAttribute('src', 'assets/images/brew.png');
+            card.setAttribute('src', 'assets/images/background.png');
             card.setAttribute('data-id', img);
             card.classList.add('card_styling');
             card.addEventListener('click', turnCard);
@@ -350,11 +350,11 @@ document.addEventListener('DOMContentLoaded', () => {
          */
 
         if (deckType === "pixel") {
-            setBackgroundOnCard('assets/images/bw_background.png', 'assets/images/background.png');
+            setBackgroundOnCard('assets/images/bw_brew.png', 'assets/images/brew.png');
         } else if (deckType === "pokemon") {
             setBackgroundOnCard('assets/images/bw_heart.png', 'assets/images/heart.png');
         } else if (deckType === "hogwarts") {
-            setBackgroundOnCard('assets/images/bw_brew.png', 'assets/images/brew.png');
+            setBackgroundOnCard('assets/images/bw_background.png', 'assets/images/background.png');
         }
 
         console.log(deckType)
