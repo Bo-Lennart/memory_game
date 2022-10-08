@@ -3,20 +3,35 @@ document.addEventListener('DOMContentLoaded', () => {
     /**
      * click to trigger the different card decks
      */
-    const deck_1 = document.getElementById('card_deck_1');
+    let deck_1 = document.getElementById('card_deck_1');
     deck_1.addEventListener('click', callDeck);
-    deck_1.addEventListener('click', hideStartGame);
 
-    const deck_2 = document.getElementById('card_deck_2');
-    deck_2.addEventListener('click', callDeck);
-    deck_2.addEventListener('click', hideStartGame);
+    let deck_2 = document.getElementById('card_deck_2');
+    deck_2.addEventListener('click', callDeck2);
 
-    const deck_3 = document.getElementById('card_deck_3');
-    deck_3.addEventListener('click', callDeck);
-    deck_3.addEventListener('click', hideStartGame);
+    let deck_3 = document.getElementById('card_deck_3');
+    deck_3.addEventListener('click', callDeck3);
 
+    /**
+     * functions to set decknumber and target correct loop for the check match
+     */
+     function setDeckType() {
+        deck_2 = 'pixel';
+    }
+    
+    function setDeckType() {
+        deck_2 = 'pokemon';
+    }
+
+    function setDeckType() {
+        deck_2 = 'hogwarts';
+    }
+
+    /**
+     * function to hide deck choice
+     */
     function hideStartGame() {
-        document.getElementById('deck_choice').style.display = 'none'; 
+        document.getElementById('deck_choice').style.display = 'none';
     }
 
     // Memory game deck options
@@ -101,6 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
      */
     cardDeck.sort(() => 0.5 - Math.random());
 
+
     const gameBoard = document.getElementById('game_body');
 
     /**
@@ -110,6 +126,97 @@ document.addEventListener('DOMContentLoaded', () => {
         for (let img in cardDeck) {
             var card = document.createElement('img');
             card.setAttribute('src', 'assets/images/background.png');
+            card.setAttribute('data-id', img);
+            card.classList.add('card_styling');
+            card.addEventListener('click', turnCard);
+            gameBoard.appendChild(card);
+        }
+        hideStartGame()
+    }
+
+    /** POKEMON CARD DECK */
+    const cardDeck2 = [{
+            name: 'card1',
+            img: 'assets/images/alarm_clock.png'
+        },
+        {
+            name: 'card1',
+            img: 'assets/images/alarm_clock.png'
+        },
+
+        {
+            name: 'card2',
+            img: 'assets/images/camera.png'
+
+        },
+        {
+            name: 'card2',
+            img: 'assets/images/camera.png'
+
+        },
+
+        {
+            name: 'card3',
+            img: 'assets/images/envelope.png'
+        },
+        {
+            name: 'card3',
+            img: 'assets/images/envelope.png'
+        },
+
+        {
+            name: 'card4',
+            img: 'assets/images/smiley.png'
+        },
+        {
+            name: 'card4',
+            img: 'assets/images/smiley.png'
+        },
+
+        {
+            name: 'card5',
+            img: 'assets/images/soup.png'
+        },
+        {
+            name: 'card5',
+            img: 'assets/images/soup.png'
+        },
+
+        {
+            name: 'card6',
+            img: 'assets/images/timer.png'
+        },
+        {
+            name: 'card6',
+            img: 'assets/images/timer.png'
+        },
+
+        {
+            name: 'card7',
+            img: 'assets/images/water_drop.png'
+        },
+        {
+            name: 'card7',
+            img: 'assets/images/water_drop.png'
+        },
+
+        {
+            name: 'card8',
+            img: 'assets/images/yoda.png'
+        },
+        {
+            name: 'card8',
+            img: 'assets/images/yoda.png'
+        }
+
+    ];
+
+    cardDeck2.sort(() => 0.5 - Math.random());
+
+    function callDeck2() {
+        for (let img in cardDeck2) {
+            var card = document.createElement('img');
+            card.setAttribute('src', 'assets/images/pokemon.png');
             card.setAttribute('data-id', img);
             card.classList.add('card_styling');
             card.addEventListener('click', turnCard);
@@ -169,14 +276,16 @@ document.addEventListener('DOMContentLoaded', () => {
         /**
          * if statement to check cards and load img accordingly
          */
-        if (cardOne === cardTwo) {
-            cards[cardOneId].setAttribute('src', 'assets/images/bw_backgroound.png');
-            cards[cardTwoId].setAttribute('src', 'assets/images/bw_backgroound.png');
-            cardScore.push(cardOneId);
-            cardScore.push(cardTwoId);
-        } else {
-            cards[cardOneId].setAttribute('src', 'assets/images/background.png');
-            cards[cardTwoId].setAttribute('src', 'assets/images/background.png');
+        if (cardDeck2 = 1) {
+            if (cardOne === cardTwo) {
+                cards[cardOneId].setAttribute('src', 'assets/images/bw_backgroound.png');
+                cards[cardTwoId].setAttribute('src', 'assets/images/bw_backgroound.png');
+                cardScore.push(cardOneId);
+                cardScore.push(cardTwoId);
+            } else {
+                cards[cardOneId].setAttribute('src', 'assets/images/background.png');
+                cards[cardTwoId].setAttribute('src', 'assets/images/background.png');
+            }
         }
 
         /**

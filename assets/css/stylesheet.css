@@ -66,8 +66,15 @@ button:hover {
     margin: 1%;
 }
 
+/* Pixel Deck choice styling */
 #card_deck_1 {
     background-image: url('../images/background.png');
+    background-size: cover;
+}
+
+/* pokemon deck */
+#card_deck_2 {
+    background-image: url('../images/pokemon.png');
     background-size: cover;
 }
 
