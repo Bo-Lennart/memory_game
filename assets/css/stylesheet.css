@@ -60,6 +60,24 @@ img:hover {
     box-shadow: 5px 3px 3px rgb(0, 0, 0);;
 }
 
+footer {
+    height: 40px;
+    display: inline;
+    text-align: center;
+}
+
+footer ul li {
+    display: inline;
+    width: 20%;
+    list-style: none;
+    margin: 5%;
+}
+
+.social_icon a {
+    font-size: 35px;
+    color: white;
+}
+
 
 @media screen and (max-width: 1000px) {
     body {
