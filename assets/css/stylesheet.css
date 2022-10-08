@@ -125,7 +125,7 @@ ul {
     border: none;
 }
 
-#deck_choice p:nth-child(1) {
+#deck_choice:nth-child(2) {
     color: green;
 }
 
