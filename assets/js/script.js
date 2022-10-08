@@ -248,38 +248,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
         {
             name: 'card9',
-            img: 'assets/images/level_3/letter_.png'
+            img: 'assets/images/level_3/letter_w.png'
         },
         {
             name: 'card9',
-            img: 'assets/images/level_3/letter_.png'
+            img: 'assets/images/level_3/letter_w.png'
         },
 
         {
             name: 'card10',
-            img: 'assets/images/level_3/letter_.png'
+            img: 'assets/images/level_3/letter_low_case_v.png'
         },
         {
             name: 'card10',
-            img: 'assets/images/level_3/letter_.png'
+            img: 'assets/images/level_3/letter_low_case_v.png'
         },
 
         {
             name: 'card11',
-            img: 'assets/images/level_3/letter_.png'
+            img: 'assets/images/level_3/letter_o.png'
         },
         {
             name: 'card11',
-            img: 'assets/images/level_3/letter_.png'
+            img: 'assets/images/level_3/letter_o.png'
         },
 
         {
             name: 'card12',
-            img: 'assets/images/level_3/letter_.png'
+            img: 'assets/images/level_3/letter_w.png'
         },
         {
             name: 'card12',
-            img: 'assets/images/level_3/letter_.png'
+            img: 'assets/images/level_3/letter_w.png'
         }
 
     ];
