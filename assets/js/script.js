@@ -284,8 +284,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     ];
 
-    deckSize = [];
-
     /**
      * variables declared to push in picked cards
      */
@@ -438,6 +436,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log("cardOne:", cardOne);
         console.log("cardTwo:", cardTwo);
 
+        var deckSize;
         /**
          * if statement to check cards and load img accordingly for brew deck
          */
@@ -445,15 +444,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (deckType === "brew") {
             setBackgroundOnCard('assets/images/bw_brew.png', 'assets/images/brew.png');
             deckSize = cardDeck.length;
-            console.log(deckSize)
         } else if (deckType === "heartPixel") {
             setBackgroundOnCard('assets/images/bw_heart.png', 'assets/images/heart.png');
             deckSize = cardDeck2.length;
-            console.log(deckSize)
         } else if (deckType === "robot") {
             setBackgroundOnCard('assets/images/bw_background.png', 'assets/images/background.png');
             deckSize = cardDeck3.length;
-            console.log(deckSize)
         }
 
         console.log(deckType)
@@ -491,7 +487,7 @@ document.addEventListener('DOMContentLoaded', () => {
         /**
          * When game is done. Hide game board
          */
-        if (scoreDisplay.textContent == deckSize.length || attempts === 20) {
+        if (cardScore.length === deckSize || attempts === 20) {
             document.getElementById('game_body').style.display = 'none';
 
             /**
