@@ -152,6 +152,81 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
     ];
+    const cardDeck3 = [{
+        name: 'card1',
+        img: 'assets/images/alarm_clock.png'
+    },
+    {
+        name: 'card1',
+        img: 'assets/images/alarm_clock.png'
+    },
+
+    {
+        name: 'card2',
+        img: 'assets/images/camera.png'
+
+    },
+    {
+        name: 'card2',
+        img: 'assets/images/camera.png'
+
+    },
+
+    {
+        name: 'card3',
+        img: 'assets/images/envelope.png'
+    },
+    {
+        name: 'card3',
+        img: 'assets/images/envelope.png'
+    },
+
+    {
+        name: 'card4',
+        img: 'assets/images/smiley.png'
+    },
+    {
+        name: 'card4',
+        img: 'assets/images/smiley.png'
+    },
+
+    {
+        name: 'card5',
+        img: 'assets/images/soup.png'
+    },
+    {
+        name: 'card5',
+        img: 'assets/images/soup.png'
+    },
+
+    {
+        name: 'card6',
+        img: 'assets/images/timer.png'
+    },
+    {
+        name: 'card6',
+        img: 'assets/images/timer.png'
+    },
+
+    {
+        name: 'card7',
+        img: 'assets/images/water_drop.png'
+    },
+    {
+        name: 'card7',
+        img: 'assets/images/water_drop.png'
+    },
+
+    {
+        name: 'card8',
+        img: 'assets/images/yoda.png'
+    },
+    {
+        name: 'card8',
+        img: 'assets/images/yoda.png'
+    }
+
+];
 
     /**
      * variables declared to push in picked cards
@@ -169,8 +244,9 @@ document.addEventListener('DOMContentLoaded', () => {
      * randomize order of cardDeck array
      */
     cardDeck.sort(() => 0.5 - Math.random());
-    const gameBoard = document.getElementById('game_body');
     cardDeck2.sort(() => 0.5 - Math.random());
+    cardDeck3.sort(() => 0.5 - Math.random());
+    const gameBoard = document.getElementById('game_body');
 
     /**
      * click to trigger the different card decks
@@ -203,7 +279,7 @@ document.addEventListener('DOMContentLoaded', () => {
             gameBoard.appendChild(card);
         }
         hideStartGame()
-        deckType = "pixel";
+        deckType = 'pixel';
     }
     
     function callDeck2() {
@@ -216,7 +292,7 @@ document.addEventListener('DOMContentLoaded', () => {
             gameBoard.appendChild(card);
         }
         hideStartGame()
-        deckType = "pokemon";
+        deckType = 'pokemon';
     }
 
     function callDeck3() {
@@ -229,7 +305,7 @@ document.addEventListener('DOMContentLoaded', () => {
             gameBoard.appendChild(card);
         }
         hideStartGame()
-        deckType = "hogwarts";
+        deckType = 'hogwarts';
     }
 
     /**
@@ -273,11 +349,11 @@ document.addEventListener('DOMContentLoaded', () => {
          * if statement to check cards and load img accordingly for pixel deck
          */
 
-        if (deckType = "pixel") {
+        if (deckType == "pixel") {
             pixelDeckCheck()
-        } else if (deckType = "pokemon") {
+        } else if (deckType == "pokemon") {
             pokemonDeckCheck()
-        } else if (deckType = "hogwarts") {
+        } else if (deckType == "hogwarts") {
             hogwartsDeckCheck()
         }
 
@@ -309,13 +385,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         function hogwartsDeckCheck() {
             if (cardOne === cardTwo) {
-                cards[cardOneId].setAttribute('src', 'assets/images/bw_backgroound.png');
-                cards[cardTwoId].setAttribute('src', 'assets/images/bw_backgroound.png');
+                cards[cardOneId].setAttribute('src', 'assets/images/yoga.png');
+                cards[cardTwoId].setAttribute('src', 'assets/images/yoga.png');
                 cardScore.push(cardOneId);
                 cardScore.push(cardTwoId);
             } else {
-                cards[cardOneId].setAttribute('src', 'assets/images/background.png');
-                cards[cardTwoId].setAttribute('src', 'assets/images/background.png');
+                cards[cardOneId].setAttribute('src', 'assets/images/camera.png');
+                cards[cardTwoId].setAttribute('src', 'assets/images/camera.png');
             }
             }
 
