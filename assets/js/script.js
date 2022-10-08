@@ -285,7 +285,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function callDeck2() {
         for (let img in cardDeck2) {
             var card = document.createElement('img');
-            card.setAttribute('src', 'assets/images/pokemon.png');
+            card.setAttribute('src', 'assets/images/heart.png');
             card.setAttribute('data-id', img);
             card.classList.add('card_styling');
             card.addEventListener('click', turnCard);
@@ -298,7 +298,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function callDeck3() {
         for (let img in cardDeck3) {
             var card = document.createElement('img');
-            card.setAttribute('src', 'assets/images/yoda.png');
+            card.setAttribute('src', 'assets/images/brew.png');
             card.setAttribute('data-id', img);
             card.classList.add('card_styling');
             card.addEventListener('click', turnCard);
@@ -352,13 +352,13 @@ document.addEventListener('DOMContentLoaded', () => {
         if (deckType === "pixel") {
             setBackgroundOnCard('assets/images/bw_backgroound.png', 'assets/images/background.png');
         } else if (deckType === "pokemon") {
-            setBackgroundOnCard('assets/images/bw_pokemon.png', 'assets/images/pokemon.png');
+            setBackgroundOnCard('assets/images/bw_hear.png', 'assets/images/heart.png');
         } else if (deckType === "hogwarts") {
-            setBackgroundOnCard('assets/images/yoga.png', 'assets/images/camera.png');
+            setBackgroundOnCard('assets/images/bw_brew.png', 'assets/images/brew.png');
         }
 
         console.log(deckType)
-        
+
         /**
          * Function to check if card is a match and sett correct background accordingly
          */
