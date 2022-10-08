@@ -483,7 +483,7 @@ document.addEventListener('DOMContentLoaded', () => {
         /**
          * When game is done. Hide game board
          */
-        if (cardScore.length === 2 || attempts === 20) {
+        if (cardScore.length === 16 || attempts === 20) {
             document.getElementById('game_body').style.display = 'none';
 
             /**
