@@ -52,6 +52,20 @@ button:hover {
     transform: translateY(-7px);
 }
 
+/* styling for card deck choice */
+.card_deck_button {
+    height: 100px; 
+    width: 100px; 
+    background-color: black; 
+    color: white; 
+    font-size: 25px; 
+    margin-top: 10%; 
+    border-radius: 10%; 
+    font-family: Share Tech Mono, monospace; 
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    margin: 10%;
+}
+
 /* styling for game cards */
 img {
     max-width: 130px;
@@ -132,6 +146,12 @@ ul {
 @media screen and (max-width: 450px)  {
     body {
         font-size: 20px;
+    }
+
+    .card_deck_button {
+        height: 60px; 
+        width: 60px; 
+        font-size: 15px;
     }
 
     #game_body {
