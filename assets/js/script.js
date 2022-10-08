@@ -76,62 +76,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     ];
-
-      /**
-     * randomize order of cardDeck array
-     */
-       cardDeck.sort(() => 0.5 - Math.random());
-       const gameBoard = document.getElementById('game_body');
-
-    /**
-     * click to trigger the different card decks
-     */
-    let deck_1 = document.getElementById('card_deck_1');
-    deck_1.addEventListener('click', callDeck);
-
-    let deck_2 = document.getElementById('card_deck_2');
-    deck_2.addEventListener('click', callDeck2);
-
-    let deck_3 = document.getElementById('card_deck_3');
-    deck_3.addEventListener('click', callDeck3);
-
-    /**
-     * functions to set decknumber and target correct loop for the check match
-     */
-     function setDeckType() {
-        deck_2 = 'pixel';
-    }
-    
-    function setDeckType() {
-        deck_2 = 'pokemon';
-    }
-
-    function setDeckType() {
-        deck_2 = 'hogwarts';
-    }
-
-    /**
-     * function to hide deck choice
-     */
-    function hideStartGame() {
-        document.getElementById('deck_choice').style.display = 'none';
-    }
-
-    /**
-     * Create game board out of cardDeck array
-     */
-    function callDeck() {
-        for (let img in cardDeck) {
-            var card = document.createElement('img');
-            card.setAttribute('src', 'assets/images/background.png');
-            card.setAttribute('data-id', img);
-            card.classList.add('card_styling');
-            card.addEventListener('click', turnCard);
-            gameBoard.appendChild(card);
-        }
-        hideStartGame()
-    }
-
     /** POKEMON CARD DECK */
     const cardDeck2 = [{
             name: 'card1',
@@ -209,7 +153,74 @@ document.addEventListener('DOMContentLoaded', () => {
 
     ];
 
-    cardDeck2.sort(() => 0.5 - Math.random());
+    /**
+     * variables declared to push in picked cards
+     */
+     let pickedCard = [];
+     let pickedCardId = [];
+
+    /**
+     * variable to push in correct cards found
+     */
+    let cardScore = [];
+    const scoreDisplay = document.getElementById('score');
+
+      /**
+     * randomize order of cardDeck array
+     */
+       cardDeck.sort(() => 0.5 - Math.random());
+       const gameBoard = document.getElementById('game_body');
+       cardDeck2.sort(() => 0.5 - Math.random());
+
+    /**
+     * click to trigger the different card decks
+     */
+    let deck_1 = document.getElementById('card_deck_1');
+    deck_1.addEventListener('click', callDeck);
+
+    let deck_2 = document.getElementById('card_deck_2');
+    deck_2.addEventListener('click', callDeck2);
+
+    let deck_3 = document.getElementById('card_deck_3');
+    deck_3.addEventListener('click', callDeck3);
+
+    /**
+     * functions to set decknumber and target correct loop for the check match
+     */
+     function setDeckType() {
+        deck_1 = 1;
+    }
+    
+    function setDeckType() {
+        deck_2 = 'pokemon';
+    }
+
+    function setDeckType() {
+        deck_2 = 'hogwarts';
+    }
+
+    /**
+     * function to hide deck choice
+     */
+    function hideStartGame() {
+        document.getElementById('deck_choice').style.display = 'none';
+    }
+
+    /**
+     * Create game board out of cardDeck array
+     */
+    function callDeck() {
+        for (let img in cardDeck) {
+            var card = document.createElement('img');
+            card.setAttribute('src', 'assets/images/background.png');
+            card.setAttribute('data-id', img);
+            card.classList.add('card_styling');
+            card.addEventListener('click', turnCard);
+            gameBoard.appendChild(card);
+        }
+        hideStartGame()
+        setDeckType()
+    }
 
     function callDeck2() {
         for (let img in cardDeck2) {
@@ -221,12 +232,6 @@ document.addEventListener('DOMContentLoaded', () => {
             gameBoard.appendChild(card);
         }
     }
-
-    /**
-     * variables declared to push in picked cards
-     */
-    let pickedCard = [];
-    let pickedCardId = [];
 
     /**
      * turn card function
@@ -249,12 +254,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /**
-     * variable to push in correct cards found
-     */
-    let cardScore = [];
-    const scoreDisplay = document.getElementById('score');
-
-    /**
      * function to check for match
      */
     function checkForMatch() {
@@ -272,9 +271,9 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log("cardTwo:", cardTwo);
 
         /**
-         * if statement to check cards and load img accordingly
+         * if statement to check cards and load img accordingly for pixel deck
          */
-        if (cardDeck2 = 1) {
+        if (deck_1 = 1) {
             if (cardOne === cardTwo) {
                 cards[cardOneId].setAttribute('src', 'assets/images/bw_backgroound.png');
                 cards[cardTwoId].setAttribute('src', 'assets/images/bw_backgroound.png');
