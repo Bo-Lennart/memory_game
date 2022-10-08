@@ -197,12 +197,14 @@ document.addEventListener('DOMContentLoaded', () => {
             body.appendChild(newGame);
             newGame.addEventListener('click', refreshPage);
 
-            function refreshPage() {
-                window.location.reload();
-            }
-
         }
 
+    }
+    /**
+     * function to refresh page and trigger new game
+     */
+    function refreshPage() {
+        window.location.reload();
     }
 
     /**
