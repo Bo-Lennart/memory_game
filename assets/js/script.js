@@ -1,8 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    const startGame = document.getElementById('card_deck_1');
-    startGame.addEventListener('click', callDeck);
-    startGame.addEventListener('click', hideStartGame);
+    const deck_1 = document.getElementById('card_deck_1');
+    deck_1.addEventListener('click', callDeck);
+    deck_1.addEventListener('click', hideStartGame);
+
+    const deck_2 = document.getElementById('card_deck_2');
+    deck_2.addEventListener('click', callDeck);
+    deck_2.addEventListener('click', hideStartGame);
+
+    const deck_3 = document.getElementById('card_deck_3');
+    deck_3.addEventListener('click', callDeck);
+    deck_3.addEventListener('click', hideStartGame);
 
     function hideStartGame() {
         document.getElementById('deck_choice').style.display = 'none'; 
