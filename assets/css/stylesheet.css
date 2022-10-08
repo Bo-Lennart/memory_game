@@ -125,8 +125,12 @@ ul {
     }
     
     #game_body {
-        height: 445px;
         width: 445px;
+    }
+
+    .card_deck_button {
+        height: 100px;
+        width: 100px;
     }
 
     img {
