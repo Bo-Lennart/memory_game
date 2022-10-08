@@ -75,31 +75,31 @@ document.addEventListener('DOMContentLoaded', () => {
             img: 'assets/images/yoda.png'
         }
 
-    ]
+    ];
 
     /**
      * randomize order of cardDeck array
      */
-    cardDeck.sort(() => 0.5 - Math.random())
+    cardDeck.sort(() => 0.5 - Math.random());
 
-    const gameBoard = document.getElementById('game_body')
+    const gameBoard = document.getElementById('game_body');
 
     /**
      * Create game board out of cardDeck array
      */
     function callDeck() {
         for (let img in cardDeck) {
-            var card = document.createElement('img')
-            card.setAttribute('src', 'assets/images/background.png')
-            card.setAttribute('data-id', img)
-            card.classList.add('card_styling')
-            card.addEventListener('click', turnCard)
-            gameBoard.appendChild(card)
+            var card = document.createElement('img');
+            card.setAttribute('src', 'assets/images/background.png');
+            card.setAttribute('data-id', img);
+            card.classList.add('card_styling');
+            card.addEventListener('click', turnCard);
+            gameBoard.appendChild(card);
         }
     }
 
-    let pickedCard = []
-    let pickedCardId = []
+    let pickedCard = [];
+    let pickedCardId = [];
 
     /**
      * turn card function
@@ -107,61 +107,61 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function turnCard() {
         if (pickedCardId.length < 2) {
-            var cardId = this.getAttribute('data-id')
+            var cardId = this.getAttribute('data-id');
             console.log(pickedCardId);
         }
         if (!pickedCardId.includes(cardId) && !cardScore.includes(cardId)) {
-            pickedCard.push(cardDeck[cardId].name)
-            pickedCardId.push(cardId)
-            this.setAttribute('src', cardDeck[cardId].img)
+            pickedCard.push(cardDeck[cardId].name);
+            pickedCardId.push(cardId);
+            this.setAttribute('src', cardDeck[cardId].img);
         }
         if (pickedCard.length === 2) {
-            setTimeout(checkForMatch, 500)
+            setTimeout(checkForMatch, 500);
         }
 
     }
 
-    let cardScore = []
-    const scoreDisplay = document.getElementById('score')
+    let cardScore = [];
+    const scoreDisplay = document.getElementById('score');
 
     /**
      * function to check for match
      */
     function checkForMatch() {
-        var cards = document.getElementsByTagName('img')
-        const cardOneId = pickedCardId[0]
-        const cardTwoId = pickedCardId[1]
+        var cards = document.getElementsByTagName('img');
+        const cardOneId = pickedCardId[0];
+        const cardTwoId = pickedCardId[1];
 
-        console.log("cardOneId:", cardOneId)
-        console.log("cardOneId:", cardTwoId)
+        console.log("cardOneId:", cardOneId);
+        console.log("cardOneId:", cardTwoId);
 
-        const cardOne = pickedCard[0]
-        const cardTwo = pickedCard[1]
+        const cardOne = pickedCard[0];
+        const cardTwo = pickedCard[1];
 
-        console.log("cardOne:", cardOne)
-        console.log("cardTwo:", cardTwo)
+        console.log("cardOne:", cardOne);
+        console.log("cardTwo:", cardTwo);
 
         /**
          * if statement to check cards and load img accordingly
          */
         if (cardOne === cardTwo) {
-            cards[cardOneId].setAttribute('src', 'assets/images/bw_backgroound.png')
-            cards[cardTwoId].setAttribute('src', 'assets/images/bw_backgroound.png')
-            cardScore.push(cardOneId)
-            cardScore.push(cardTwoId)
+            cards[cardOneId].setAttribute('src', 'assets/images/bw_backgroound.png');
+            cards[cardTwoId].setAttribute('src', 'assets/images/bw_backgroound.png');
+            cardScore.push(cardOneId);
+            cardScore.push(cardTwoId);
         } else {
-            cards[cardOneId].setAttribute('src', 'assets/images/background.png')
-            cards[cardTwoId].setAttribute('src', 'assets/images/background.png')
+            cards[cardOneId].setAttribute('src', 'assets/images/background.png');
+            cards[cardTwoId].setAttribute('src', 'assets/images/background.png');
         }
 
         /**
          * add score inside card score and reset array length to run turnCard function again
          */
-        scoreDisplay.textContent = cardScore.length
-        pickedCard = []
-        pickedCardId = []
+        scoreDisplay.textContent = cardScore.length;
+        pickedCard = [];
+        pickedCardId = [];
 
-        incrementAttempts()
+        incrementAttempts();
 
         /**
          * read what text is displayed inside attempts, return as a number for endGame to trigger
@@ -175,30 +175,30 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('game_body').style.display = 'none';
 
             if (attempts === 20) {
-                alert('You lost :( Game Over!')
-                body = document.getElementById('call_for_reload')
-                body.setAttribute('style', 'background-color: #9e2a2b;')
+                alert('You lost :( Game Over!');
+                body = document.getElementById('call_for_reload');
+                body.setAttribute('style', 'background-color: #9e2a2b;');
             } else {
-                alert('Congrats!!! You Won!')
-                body = document.getElementById('call_for_reload')
-                body.setAttribute('style', 'background-color: #aaf683;')
+                alert('Congrats!!! You Won!');
+                body = document.getElementById('call_for_reload');
+                body.setAttribute('style', 'background-color: #aaf683;');
             }
             /**
              * creates button element with styling in html element that refreshes page when clicked
              */
-            var newGame = document.createElement('button')
-            newGame.classList.add("new_game_button")
+            var newGame = document.createElement('button');
+            newGame.classList.add("new_game_button");
             newGame.setAttribute(
                 'style',
                 'height: 100px; width: 100px; background-color: black; color: white; font-size: 25px; margin-top: 10%; border-radius: 10%; font-family: Share Tech Mono, monospace; box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);'
             );
-            newGame.innerHTML = "New Game"
-            var body = document.getElementById('call_for_reload')
-            body.appendChild(newGame)
-            newGame.addEventListener('click', refreshPage)
+            newGame.innerHTML = "New Game";
+            var body = document.getElementById('call_for_reload');
+            body.appendChild(newGame);
+            newGame.addEventListener('click', refreshPage);
 
             function refreshPage() {
-                window.location.reload()
+                window.location.reload();
             }
 
         }
@@ -213,6 +213,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('attempts').innerText = ++oldAttempts;
     }
 
-    callDeck()
+    callDeck();
 
-})
+});
