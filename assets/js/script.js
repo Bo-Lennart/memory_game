@@ -1,5 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    /**
+     * click to trigger the different card decks
+     */
     const deck_1 = document.getElementById('card_deck_1');
     deck_1.addEventListener('click', callDeck);
     deck_1.addEventListener('click', hideStartGame);
