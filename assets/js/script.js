@@ -349,50 +349,39 @@ document.addEventListener('DOMContentLoaded', () => {
          * if statement to check cards and load img accordingly for pixel deck
          */
 
-        if (deckType == "pixel") {
+        if (deckType === "pixel") {
             pixelDeckCheck()
-        } else if (deckType == "pokemon") {
+        } else if (deckType === "pokemon") {
             pokemonDeckCheck()
-        } else if (deckType == "hogwarts") {
+        } else if (deckType === "hogwarts") {
             hogwartsDeckCheck()
         }
 
         console.log(deckType)
 
         function pixelDeckCheck() {
-        if (cardOne === cardTwo) {
-            cards[cardOneId].setAttribute('src', 'assets/images/bw_backgroound.png');
-            cards[cardTwoId].setAttribute('src', 'assets/images/bw_backgroound.png');
-            cardScore.push(cardOneId);
-            cardScore.push(cardTwoId);
-        } else {
-            cards[cardOneId].setAttribute('src', 'assets/images/background.png');
-            cards[cardTwoId].setAttribute('src', 'assets/images/background.png');
-        }
-        }
+            setBackgroundOnCard('assets/images/bw_backgroound.png', 'assets/images/background.png');
+            }
 
         function pokemonDeckCheck() {
-            if (cardOne === cardTwo) {
-                cards[cardOneId].setAttribute('src', 'assets/images/bw_pokemon.png');
-                cards[cardTwoId].setAttribute('src', 'assets/images/bw_pokemon.png');
-                cardScore.push(cardOneId);
-                cardScore.push(cardTwoId);
-            } else {
-                cards[cardOneId].setAttribute('src', 'assets/images/pokemon.png');
-                cards[cardTwoId].setAttribute('src', 'assets/images/pokemon.png');
-            }
+            setBackgroundOnCard('assets/images/bw_pokemon.png', 'assets/images/pokemon.png');
             }
 
         function hogwartsDeckCheck() {
+            setBackgroundOnCard('assets/images/yoga.png', 'assets/images/camera.png');
+            }
+
+        function setBackgroundOnCard(cardBackground, foundCardBackground) {
             if (cardOne === cardTwo) {
-                cards[cardOneId].setAttribute('src', 'assets/images/yoga.png');
-                cards[cardTwoId].setAttribute('src', 'assets/images/yoga.png');
+                cards[cardOneId].setAttribute('src', cardBackground);
+                cards[cardTwoId].setAttribute('src', cardBackground);
                 cardScore.push(cardOneId);
                 cardScore.push(cardTwoId);
             } else {
-                cards[cardOneId].setAttribute('src', 'assets/images/camera.png');
-                cards[cardTwoId].setAttribute('src', 'assets/images/camera.png');
+                cards[cardOneId].setAttribute('src', foundCardBackground);
+                cards[cardTwoId].setAttribute('src', foundCardBackground);
             }
+                
             }
 
         /**
