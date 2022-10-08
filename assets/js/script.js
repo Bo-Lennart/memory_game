@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    const startGame = document.getElementById('start_game')
+    
     callDeck();
 
     // Memory game deck options
