@@ -323,7 +323,7 @@ document.addEventListener('DOMContentLoaded', () => {
             this.setAttribute('src', cardDeck[cardId].img);
         }
         if (pickedCard.length === 2) {
-            setTimeout(checkForMatch, 500);
+            setTimeout(checkForMatch, 700);
         }
 
     }
