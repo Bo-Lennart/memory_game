@@ -1,5 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    const startGame = document.getElementById('start_game');
+    startGame.addEventListener('click', callDeck);
+    startGame.addEventListener('click', hideStartGame) ;
+
+    function hideStartGame() {
+        document.getElementById('start_game').style.display = 'none'; 
+    }
+
     // Memory game deck options
     const cardDeck = [{
             name: 'card1',
@@ -220,9 +228,6 @@ document.addEventListener('DOMContentLoaded', () => {
         let oldAttempts = parseInt(document.getElementById('attempts').innerText);
         document.getElementById('attempts').innerText = ++oldAttempts;
     }
-
-    const startGame = document.getElementById('start_game');
-    startGame.addEventListener('click', callDeck);
 
 
 });
