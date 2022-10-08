@@ -1,79 +1,79 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
+
     // Memory game deck options
     const cardDeck = [{
-        name: 'card1',
-        img: 'assets/images/alarm_clock.png'
-    },
-    {
-        name: 'card1',
-        img: 'assets/images/alarm_clock.png'
-    },
+            name: 'card1',
+            img: 'assets/images/alarm_clock.png'
+        },
+        {
+            name: 'card1',
+            img: 'assets/images/alarm_clock.png'
+        },
 
-    {
-        name: 'card2',
-        img: 'assets/images/camera.png'
+        {
+            name: 'card2',
+            img: 'assets/images/camera.png'
 
-    },
-    {
-        name: 'card2',
-        img: 'assets/images/camera.png'
+        },
+        {
+            name: 'card2',
+            img: 'assets/images/camera.png'
 
-    },
+        },
 
-    {
-        name: 'card3',
-        img: 'assets/images/envelope.png'
-    },
-    {
-        name: 'card3',
-        img: 'assets/images/envelope.png'
-    },
+        {
+            name: 'card3',
+            img: 'assets/images/envelope.png'
+        },
+        {
+            name: 'card3',
+            img: 'assets/images/envelope.png'
+        },
 
-    {
-        name: 'card4',
-        img: 'assets/images/smiley.png'
-    },
-    {
-        name: 'card4',
-        img: 'assets/images/smiley.png'
-    },
+        {
+            name: 'card4',
+            img: 'assets/images/smiley.png'
+        },
+        {
+            name: 'card4',
+            img: 'assets/images/smiley.png'
+        },
 
-    {
-        name: 'card5',
-        img: 'assets/images/soup.png'
-    },
-    {
-        name: 'card5',
-        img: 'assets/images/soup.png'
-    },
+        {
+            name: 'card5',
+            img: 'assets/images/soup.png'
+        },
+        {
+            name: 'card5',
+            img: 'assets/images/soup.png'
+        },
 
-    {
-        name: 'card6',
-        img: 'assets/images/timer.png'
-    },
-    {
-        name: 'card6',
-        img: 'assets/images/timer.png'
-    },
+        {
+            name: 'card6',
+            img: 'assets/images/timer.png'
+        },
+        {
+            name: 'card6',
+            img: 'assets/images/timer.png'
+        },
 
-    {
-        name: 'card7',
-        img: 'assets/images/water_drop.png'
-    },
-    {
-        name: 'card7',
-        img: 'assets/images/water_drop.png'
-    },
+        {
+            name: 'card7',
+            img: 'assets/images/water_drop.png'
+        },
+        {
+            name: 'card7',
+            img: 'assets/images/water_drop.png'
+        },
 
-    {
-        name: 'card8',
-        img: 'assets/images/yoda.png'
-    },
-    {
-        name: 'card8',
-        img: 'assets/images/yoda.png'
-    }
+        {
+            name: 'card8',
+            img: 'assets/images/yoda.png'
+        },
+        {
+            name: 'card8',
+            img: 'assets/images/yoda.png'
+        }
 
     ];
     /** POKEMON CARD DECK */
@@ -153,86 +153,86 @@ document.addEventListener('DOMContentLoaded', () => {
 
     ];
     const cardDeck3 = [{
-        name: 'card1',
-        img: 'assets/images/alarm_clock.png'
-    },
-    {
-        name: 'card1',
-        img: 'assets/images/alarm_clock.png'
-    },
+            name: 'card1',
+            img: 'assets/images/alarm_clock.png'
+        },
+        {
+            name: 'card1',
+            img: 'assets/images/alarm_clock.png'
+        },
 
-    {
-        name: 'card2',
-        img: 'assets/images/camera.png'
+        {
+            name: 'card2',
+            img: 'assets/images/camera.png'
 
-    },
-    {
-        name: 'card2',
-        img: 'assets/images/camera.png'
+        },
+        {
+            name: 'card2',
+            img: 'assets/images/camera.png'
 
-    },
+        },
 
-    {
-        name: 'card3',
-        img: 'assets/images/envelope.png'
-    },
-    {
-        name: 'card3',
-        img: 'assets/images/envelope.png'
-    },
+        {
+            name: 'card3',
+            img: 'assets/images/envelope.png'
+        },
+        {
+            name: 'card3',
+            img: 'assets/images/envelope.png'
+        },
 
-    {
-        name: 'card4',
-        img: 'assets/images/smiley.png'
-    },
-    {
-        name: 'card4',
-        img: 'assets/images/smiley.png'
-    },
+        {
+            name: 'card4',
+            img: 'assets/images/smiley.png'
+        },
+        {
+            name: 'card4',
+            img: 'assets/images/smiley.png'
+        },
 
-    {
-        name: 'card5',
-        img: 'assets/images/soup.png'
-    },
-    {
-        name: 'card5',
-        img: 'assets/images/soup.png'
-    },
+        {
+            name: 'card5',
+            img: 'assets/images/soup.png'
+        },
+        {
+            name: 'card5',
+            img: 'assets/images/soup.png'
+        },
 
-    {
-        name: 'card6',
-        img: 'assets/images/timer.png'
-    },
-    {
-        name: 'card6',
-        img: 'assets/images/timer.png'
-    },
+        {
+            name: 'card6',
+            img: 'assets/images/timer.png'
+        },
+        {
+            name: 'card6',
+            img: 'assets/images/timer.png'
+        },
 
-    {
-        name: 'card7',
-        img: 'assets/images/water_drop.png'
-    },
-    {
-        name: 'card7',
-        img: 'assets/images/water_drop.png'
-    },
+        {
+            name: 'card7',
+            img: 'assets/images/water_drop.png'
+        },
+        {
+            name: 'card7',
+            img: 'assets/images/water_drop.png'
+        },
 
-    {
-        name: 'card8',
-        img: 'assets/images/yoda.png'
-    },
-    {
-        name: 'card8',
-        img: 'assets/images/yoda.png'
-    }
+        {
+            name: 'card8',
+            img: 'assets/images/yoda.png'
+        },
+        {
+            name: 'card8',
+            img: 'assets/images/yoda.png'
+        }
 
-];
+    ];
 
     /**
      * variables declared to push in picked cards
      */
-     let pickedCard = [];
-     let pickedCardId = [];
+    let pickedCard = [];
+    let pickedCardId = [];
 
     /**
      * variable to push in correct cards found
@@ -240,7 +240,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let cardScore = [];
     const scoreDisplay = document.getElementById('score');
 
-      /**
+    /**
      * randomize order of cardDeck array
      */
     cardDeck.sort(() => 0.5 - Math.random());
@@ -254,7 +254,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let deck_1 = document.getElementById('card_deck_1');
     let deck_2 = document.getElementById('card_deck_2');
     let deck_3 = document.getElementById('card_deck_3');
-    
+
     deck_1.addEventListener('click', callDeck);
     deck_2.addEventListener('click', callDeck2);
     deck_3.addEventListener('click', callDeck3);
@@ -281,7 +281,7 @@ document.addEventListener('DOMContentLoaded', () => {
         hideStartGame()
         deckType = 'pixel';
     }
-    
+
     function callDeck2() {
         for (let img in cardDeck2) {
             var card = document.createElement('img');
@@ -350,27 +350,18 @@ document.addEventListener('DOMContentLoaded', () => {
          */
 
         if (deckType === "pixel") {
-            pixelDeckCheck()
+            setBackgroundOnCard('assets/images/bw_backgroound.png', 'assets/images/background.png');
         } else if (deckType === "pokemon") {
-            pokemonDeckCheck()
+            setBackgroundOnCard('assets/images/bw_pokemon.png', 'assets/images/pokemon.png');
         } else if (deckType === "hogwarts") {
-            hogwartsDeckCheck()
+            setBackgroundOnCard('assets/images/yoga.png', 'assets/images/camera.png');
         }
 
         console.log(deckType)
-
-        function pixelDeckCheck() {
-            setBackgroundOnCard('assets/images/bw_backgroound.png', 'assets/images/background.png');
-            }
-
-        function pokemonDeckCheck() {
-            setBackgroundOnCard('assets/images/bw_pokemon.png', 'assets/images/pokemon.png');
-            }
-
-        function hogwartsDeckCheck() {
-            setBackgroundOnCard('assets/images/yoga.png', 'assets/images/camera.png');
-            }
-
+        
+        /**
+         * Function to check if card is a match and sett correct background accordingly
+         */
         function setBackgroundOnCard(cardBackground, foundCardBackground) {
             if (cardOne === cardTwo) {
                 cards[cardOneId].setAttribute('src', cardBackground);
@@ -381,8 +372,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 cards[cardOneId].setAttribute('src', foundCardBackground);
                 cards[cardTwoId].setAttribute('src', foundCardBackground);
             }
-                
-            }
+
+        }
 
         /**
          * add score inside card score and reset array length to run turnCard function again. Reset pickedCard and pickedCardId to empty array
