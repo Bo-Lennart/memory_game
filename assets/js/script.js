@@ -384,6 +384,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
     }
+
     function turnCard2() {
         if (pickedCardId.length < 2) {
             var cardId = this.getAttribute('data-id');
@@ -400,6 +401,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
     }
+
     function turnCard3() {
         if (pickedCardId.length < 2) {
             var cardId = this.getAttribute('data-id');
@@ -481,35 +483,37 @@ document.addEventListener('DOMContentLoaded', () => {
         /**
          * When game is done. Hide game board
          */
-        if (cardScore.length === 16 || attempts === 2) {
+        if (cardScore.length === 2 || attempts === 20) {
             document.getElementById('game_body').style.display = 'none';
 
-                        /**
+            /**
              * creates button element with styling in html element that refreshes page when clicked
              */
-                         var newGame = document.createElement('button');
-                         newGame.classList.add("new_game_button");
-                         newGame.setAttribute(
-                             'style',
-                             'height: 100px; width: 100px; background-color: black; color: white; font-size: 25px; margin-top: 10%; border-radius: 10%; font-family: Share Tech Mono, monospace; box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);'
-                         );
-                         newGame.innerHTML = "New Game";
-                         var body = document.getElementById('call_for_reload');
-                         body.appendChild(newGame);
-                         newGame.addEventListener('click', refreshPage);
-             
+            var newGame = document.createElement('button');
+            newGame.classList.add("new_game_button");
+            newGame.setAttribute(
+                'style',
+                'height: 100px; width: 100px; background-color: black; color: white; font-size: 25px; margin-top: 10%; border-radius: 10%; font-family: Share Tech Mono, monospace; box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);'
+            );
+            newGame.innerHTML = "New Game";
+            var body = document.getElementById('call_for_reload');
+            body.appendChild(newGame);
+            newGame.addEventListener('click', refreshPage);
 
-            if (attempts === 2) {
+
+            if (attempts === 20) {
                 body = document.getElementById('call_for_reload');
                 body.setAttribute('style', 'background-color: #9e2a2b;');
                 var loser = document.createElement('h2');
                 body.appendChild(loser);
                 loser.innerHTML = "You LOST!"
-                
+
             } else {
-                alert('Congrats!!! You Won!');
                 body = document.getElementById('call_for_reload');
-                body.setAttribute('style', 'background-color: #aaf683;');
+                body.setAttribute('style', 'background-color: #a3b18a;');
+                var loser = document.createElement('h2');
+                body.appendChild(loser);
+                loser.innerHTML = "You WON!! CONGRATS!"
             }
 
         }
