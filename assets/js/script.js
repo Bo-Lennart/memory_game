@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-
+    
     // Memory game deck options
     const cardDeck = [{
         name: 'card1',
@@ -176,12 +176,11 @@ document.addEventListener('DOMContentLoaded', () => {
      * click to trigger the different card decks
      */
     let deck_1 = document.getElementById('card_deck_1');
-    deck_1.addEventListener('click', callDeck);
-
     let deck_2 = document.getElementById('card_deck_2');
-    deck_2.addEventListener('click', callDeck2);
-
     let deck_3 = document.getElementById('card_deck_3');
+    
+    deck_1.addEventListener('click', callDeck);
+    deck_2.addEventListener('click', callDeck2);
     deck_3.addEventListener('click', callDeck3);
 
     /**
@@ -204,8 +203,9 @@ document.addEventListener('DOMContentLoaded', () => {
             gameBoard.appendChild(card);
         }
         hideStartGame()
+        deckType = "pixel";
     }
-
+    
     function callDeck2() {
         for (let img in cardDeck2) {
             var card = document.createElement('img');
@@ -216,10 +216,11 @@ document.addEventListener('DOMContentLoaded', () => {
             gameBoard.appendChild(card);
         }
         hideStartGame()
+        deckType = "pokemon";
     }
 
     function callDeck3() {
-        for (let img in cardDeck2) {
+        for (let img in cardDeck3) {
             var card = document.createElement('img');
             card.setAttribute('src', 'assets/images/yoda.png');
             card.setAttribute('data-id', img);
@@ -228,6 +229,7 @@ document.addEventListener('DOMContentLoaded', () => {
             gameBoard.appendChild(card);
         }
         hideStartGame()
+        deckType = "hogwarts";
     }
 
     /**
@@ -271,6 +273,17 @@ document.addEventListener('DOMContentLoaded', () => {
          * if statement to check cards and load img accordingly for pixel deck
          */
 
+        if (deckType = "pixel") {
+            pixelDeckCheck()
+        } else if (deckType = "pokemon") {
+            pokemonDeckCheck()
+        } else if (deckType = "hogwarts") {
+            hogwartsDeckCheck()
+        }
+
+        console.log(deckType)
+
+        function pixelDeckCheck() {
         if (cardOne === cardTwo) {
             cards[cardOneId].setAttribute('src', 'assets/images/bw_backgroound.png');
             cards[cardTwoId].setAttribute('src', 'assets/images/bw_backgroound.png');
@@ -280,7 +293,31 @@ document.addEventListener('DOMContentLoaded', () => {
             cards[cardOneId].setAttribute('src', 'assets/images/background.png');
             cards[cardTwoId].setAttribute('src', 'assets/images/background.png');
         }
+        }
 
+        function pokemonDeckCheck() {
+            if (cardOne === cardTwo) {
+                cards[cardOneId].setAttribute('src', 'assets/images/bw_pokemon.png');
+                cards[cardTwoId].setAttribute('src', 'assets/images/bw_pokemon.png');
+                cardScore.push(cardOneId);
+                cardScore.push(cardTwoId);
+            } else {
+                cards[cardOneId].setAttribute('src', 'assets/images/pokemon.png');
+                cards[cardTwoId].setAttribute('src', 'assets/images/pokemon.png');
+            }
+            }
+
+        function hogwartsDeckCheck() {
+            if (cardOne === cardTwo) {
+                cards[cardOneId].setAttribute('src', 'assets/images/bw_backgroound.png');
+                cards[cardTwoId].setAttribute('src', 'assets/images/bw_backgroound.png');
+                cardScore.push(cardOneId);
+                cardScore.push(cardTwoId);
+            } else {
+                cards[cardOneId].setAttribute('src', 'assets/images/background.png');
+                cards[cardTwoId].setAttribute('src', 'assets/images/background.png');
+            }
+            }
 
         /**
          * add score inside card score and reset array length to run turnCard function again. Reset pickedCard and pickedCardId to empty array
