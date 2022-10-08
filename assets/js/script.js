@@ -1,5 +1,88 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    // Memory game deck options
+    const cardDeck = [{
+        name: 'card1',
+        img: 'assets/images/alarm_clock.png'
+    },
+    {
+        name: 'card1',
+        img: 'assets/images/alarm_clock.png'
+    },
+
+    {
+        name: 'card2',
+        img: 'assets/images/camera.png'
+
+    },
+    {
+        name: 'card2',
+        img: 'assets/images/camera.png'
+
+    },
+
+    {
+        name: 'card3',
+        img: 'assets/images/envelope.png'
+    },
+    {
+        name: 'card3',
+        img: 'assets/images/envelope.png'
+    },
+
+    {
+        name: 'card4',
+        img: 'assets/images/smiley.png'
+    },
+    {
+        name: 'card4',
+        img: 'assets/images/smiley.png'
+    },
+
+    {
+        name: 'card5',
+        img: 'assets/images/soup.png'
+    },
+    {
+        name: 'card5',
+        img: 'assets/images/soup.png'
+    },
+
+    {
+        name: 'card6',
+        img: 'assets/images/timer.png'
+    },
+    {
+        name: 'card6',
+        img: 'assets/images/timer.png'
+    },
+
+    {
+        name: 'card7',
+        img: 'assets/images/water_drop.png'
+    },
+    {
+        name: 'card7',
+        img: 'assets/images/water_drop.png'
+    },
+
+    {
+        name: 'card8',
+        img: 'assets/images/yoda.png'
+    },
+    {
+        name: 'card8',
+        img: 'assets/images/yoda.png'
+    }
+
+    ];
+
+      /**
+     * randomize order of cardDeck array
+     */
+       cardDeck.sort(() => 0.5 - Math.random());
+       const gameBoard = document.getElementById('game_body');
+
     /**
      * click to trigger the different card decks
      */
@@ -33,91 +116,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function hideStartGame() {
         document.getElementById('deck_choice').style.display = 'none';
     }
-
-    // Memory game deck options
-    const cardDeck = [{
-            name: 'card1',
-            img: 'assets/images/alarm_clock.png'
-        },
-        {
-            name: 'card1',
-            img: 'assets/images/alarm_clock.png'
-        },
-
-        {
-            name: 'card2',
-            img: 'assets/images/camera.png'
-
-        },
-        {
-            name: 'card2',
-            img: 'assets/images/camera.png'
-
-        },
-
-        {
-            name: 'card3',
-            img: 'assets/images/envelope.png'
-        },
-        {
-            name: 'card3',
-            img: 'assets/images/envelope.png'
-        },
-
-        {
-            name: 'card4',
-            img: 'assets/images/smiley.png'
-        },
-        {
-            name: 'card4',
-            img: 'assets/images/smiley.png'
-        },
-
-        {
-            name: 'card5',
-            img: 'assets/images/soup.png'
-        },
-        {
-            name: 'card5',
-            img: 'assets/images/soup.png'
-        },
-
-        {
-            name: 'card6',
-            img: 'assets/images/timer.png'
-        },
-        {
-            name: 'card6',
-            img: 'assets/images/timer.png'
-        },
-
-        {
-            name: 'card7',
-            img: 'assets/images/water_drop.png'
-        },
-        {
-            name: 'card7',
-            img: 'assets/images/water_drop.png'
-        },
-
-        {
-            name: 'card8',
-            img: 'assets/images/yoda.png'
-        },
-        {
-            name: 'card8',
-            img: 'assets/images/yoda.png'
-        }
-
-    ];
-
-    /**
-     * randomize order of cardDeck array
-     */
-    cardDeck.sort(() => 0.5 - Math.random());
-
-
-    const gameBoard = document.getElementById('game_body');
 
     /**
      * Create game board out of cardDeck array
