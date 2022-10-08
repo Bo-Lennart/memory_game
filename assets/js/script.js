@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-// Memory game deck options
-    const cardDeck = [
-        {
+    // Memory game deck options
+    const cardDeck = [{
             name: 'card1',
             img: 'assets/images/alarm_clock.png'
         },
@@ -10,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
             name: 'card1',
             img: 'assets/images/alarm_clock.png'
         },
-        
+
         {
             name: 'card2',
             img: 'assets/images/camera.png'
@@ -21,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
             img: 'assets/images/camera.png'
 
         },
-        
+
         {
             name: 'card3',
             img: 'assets/images/envelope.png'
@@ -77,11 +76,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
     ]
-    
+
     /**
      * randomize order of cardDeck array
      */
-     cardDeck.sort(() => 0.5 - Math.random())
+    cardDeck.sort(() => 0.5 - Math.random())
 
     const gameBoard = document.getElementById('game_body')
 
@@ -122,7 +121,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
 
-
     let cardScore = []
     const scoreDisplay = document.getElementById('score')
 
@@ -143,10 +141,10 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log("cardOne:", cardOne)
         console.log("cardTwo:", cardTwo)
 
-    /**
-     * if statement to check cards and load img accordingly
-     */
-        if(cardOne === cardTwo) {
+        /**
+         * if statement to check cards and load img accordingly
+         */
+        if (cardOne === cardTwo) {
             cards[cardOneId].setAttribute('src', 'assets/images/bw_backgroound.png')
             cards[cardTwoId].setAttribute('src', 'assets/images/bw_backgroound.png')
             cardScore.push(cardOneId)
@@ -154,8 +152,8 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             cards[cardOneId].setAttribute('src', 'assets/images/background.png')
             cards[cardTwoId].setAttribute('src', 'assets/images/background.png')
-        }  
-    
+        }
+
         /**
          * add score inside card score and reset array length to run turnCard function again
          */
@@ -173,10 +171,10 @@ document.addEventListener('DOMContentLoaded', () => {
         /**
          * When game is done. Hide game board
          */
-        if (cardScore.length === 16 || attempts === 21) {
+        if (cardScore.length === 16 || attempts === 20) {
             document.getElementById('game_body').style.display = 'none';
 
-            if(attempts === 21) {
+            if (attempts === 20) {
                 alert('You lost :( Game Over!')
                 body = document.getElementById('call_for_reload')
                 body.setAttribute('style', 'background-color: #9e2a2b;')
@@ -189,20 +187,20 @@ document.addEventListener('DOMContentLoaded', () => {
              * creates button element with styling in html element that refreshes page when clicked
              */
             var newGame = document.createElement('button')
-                newGame.classList.add("new_game_button")
-                newGame.setAttribute(
-                    'style',
-                    'height: 100px; width: 100px; background-color: black; color: white; font-size: 25px; margin-top: 10%; border-radius: 10%; font-family: Share Tech Mono, monospace; box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);'
-                );
+            newGame.classList.add("new_game_button")
+            newGame.setAttribute(
+                'style',
+                'height: 100px; width: 100px; background-color: black; color: white; font-size: 25px; margin-top: 10%; border-radius: 10%; font-family: Share Tech Mono, monospace; box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);'
+            );
             newGame.innerHTML = "New Game"
             var body = document.getElementById('call_for_reload')
             body.appendChild(newGame)
             newGame.addEventListener('click', refreshPage)
 
-            function refreshPage(){
+            function refreshPage() {
                 window.location.reload()
             }
-        
+
         }
 
     }
@@ -210,15 +208,11 @@ document.addEventListener('DOMContentLoaded', () => {
     /**
      * function to incement amount of attempts and update for each "checkForMatch()" that's run, onto html id="attempts"
      */
-    function incrementAttempts () {
+    function incrementAttempts() {
         let oldAttempts = parseInt(document.getElementById('attempts').innerText);
         document.getElementById('attempts').innerText = ++oldAttempts;
     }
 
-
-    
-
     callDeck()
-    
 
 })
