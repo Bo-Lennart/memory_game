@@ -74,7 +74,12 @@ button:hover {
 
 /* pokemon deck */
 #card_deck_2 {
-    background-image: url('../images/pokemon.png');
+    background-image: url('../images/heart.png');
+    background-size: cover;
+}
+
+#card_deck_3 {
+    background-image: url('../images/brew.png');
     background-size: cover;
 }
 
