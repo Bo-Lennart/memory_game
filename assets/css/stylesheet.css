@@ -120,6 +120,16 @@ ul {
     color: white;
 }
 
+/* styling for p element for deck choice */
+#deck_choice p {
+    border: none;
+}
+
+#deck_choice p:nth-child(1) {
+    color: green;
+}
+
+
 
 /* styling for screens below 1000px */
 @media screen and (max-width: 1000px) {
