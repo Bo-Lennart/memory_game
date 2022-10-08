@@ -9,7 +9,6 @@ You can access the site here: <a href="https://bo-lennart.github.io/memory_game/
 # Contents
 
 - [Project Goals](#project-goals)
-- [Target audience](#target-audience)
 - [UX User Experience](#ux-user-eperience)
     - [User Stories](#user-stories)
     - [Color Scheme](#color-schemes)
@@ -29,3 +28,6 @@ You can access the site here: <a href="https://bo-lennart.github.io/memory_game/
     # Project Goals
 
 The aim of this project is to deliver an interactive game that is pleasing visually and functional for the user to play a memory game.
+
+# UX User Experience 
+

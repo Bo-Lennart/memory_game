@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    callDeck();
+
     // Memory game deck options
     const cardDeck = [{
             name: 'card1',
@@ -221,6 +223,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('attempts').innerText = ++oldAttempts;
     }
 
-    callDeck();
+
+
 
 });
