@@ -352,7 +352,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (deckType === "pixel") {
             setBackgroundOnCard('assets/images/bw_backgroound.png', 'assets/images/background.png');
         } else if (deckType === "pokemon") {
-            setBackgroundOnCard('assets/images/bw_hear.png', 'assets/images/heart.png');
+            setBackgroundOnCard('assets/images/bw_heart.png', 'assets/images/heart.png');
         } else if (deckType === "hogwarts") {
             setBackgroundOnCard('assets/images/bw_brew.png', 'assets/images/brew.png');
         }
