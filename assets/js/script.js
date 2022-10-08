@@ -448,8 +448,12 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log(deckSize)
         } else if (deckType === "heartPixel") {
             setBackgroundOnCard('assets/images/bw_heart.png', 'assets/images/heart.png');
+            deckSize = cardDeck2.length;
+            console.log(deckSize)
         } else if (deckType === "robot") {
             setBackgroundOnCard('assets/images/bw_background.png', 'assets/images/background.png');
+            deckSize = cardDeck3.length;
+            console.log(deckSize)
         }
 
         console.log(deckType)
