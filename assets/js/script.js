@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    const startGame = document.getElementById('start_game');
+    const startGame = document.getElementById('card_deck_1');
     startGame.addEventListener('click', callDeck);
     startGame.addEventListener('click', hideStartGame);
 
