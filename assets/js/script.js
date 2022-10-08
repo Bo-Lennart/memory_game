@@ -284,6 +284,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     ];
 
+    deckSize = [];
+
     /**
      * variables declared to push in picked cards
      */
@@ -442,6 +444,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (deckType === "brew") {
             setBackgroundOnCard('assets/images/bw_brew.png', 'assets/images/brew.png');
+            deckSize = cardDeck.length;
+            console.log(deckSize)
         } else if (deckType === "heartPixel") {
             setBackgroundOnCard('assets/images/bw_heart.png', 'assets/images/heart.png');
         } else if (deckType === "robot") {
@@ -483,7 +487,7 @@ document.addEventListener('DOMContentLoaded', () => {
         /**
          * When game is done. Hide game board
          */
-        if (cardScore.length === 16 || attempts === 20) {
+        if (cardScore.length === deckSize.length || attempts === 20) {
             document.getElementById('game_body').style.display = 'none';
 
             /**
@@ -499,7 +503,6 @@ document.addEventListener('DOMContentLoaded', () => {
             var body = document.getElementById('call_for_reload');
             body.appendChild(newGame);
             newGame.addEventListener('click', refreshPage);
-
 
             if (attempts === 20) {
                 body = document.getElementById('call_for_reload');
