@@ -168,9 +168,9 @@ document.addEventListener('DOMContentLoaded', () => {
       /**
      * randomize order of cardDeck array
      */
-       cardDeck.sort(() => 0.5 - Math.random());
-       const gameBoard = document.getElementById('game_body');
-       cardDeck2.sort(() => 0.5 - Math.random());
+    cardDeck.sort(() => 0.5 - Math.random());
+    const gameBoard = document.getElementById('game_body');
+    cardDeck2.sort(() => 0.5 - Math.random());
 
     /**
      * click to trigger the different card decks
@@ -183,27 +183,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let deck_3 = document.getElementById('card_deck_3');
     deck_3.addEventListener('click', callDeck3);
-
-    /**
-     * functions to set decknumber and target correct loop for the check match
-     */
-     function setDeckType() {
-        deck_1 = true;
-        deck_2 = false;
-        deck_3 = false;
-    }
-    
-    function setDeckType2() {
-        deck_1 = false;
-        deck_2 = true;
-        deck_3 = false;
-    }
-
-    function setDeckType3() {
-        deck_1 = false;
-        deck_2 = false;
-        deck_3 = true;
-    }
 
     /**
      * function to hide deck choice
@@ -225,7 +204,6 @@ document.addEventListener('DOMContentLoaded', () => {
             gameBoard.appendChild(card);
         }
         hideStartGame()
-        setDeckType()
     }
 
     function callDeck2() {
@@ -292,41 +270,16 @@ document.addEventListener('DOMContentLoaded', () => {
         /**
          * if statement to check cards and load img accordingly for pixel deck
          */
-        if (deck_1 = true) {
-            if (cardOne === cardTwo) {
-                cards[cardOneId].setAttribute('src', 'assets/images/bw_backgroound.png');
-                cards[cardTwoId].setAttribute('src', 'assets/images/bw_backgroound.png');
-                cardScore.push(cardOneId);
-                cardScore.push(cardTwoId);
-            } else {
-                cards[cardOneId].setAttribute('src', 'assets/images/background.png');
-                cards[cardTwoId].setAttribute('src', 'assets/images/background.png');
-            }
-        } 
 
-        if (deck_2 = true) {
-            if (cardOne === cardTwo) {
-                cards[cardOneId].setAttribute('src', 'assets/images/bw_pokemon.png');
-                cards[cardTwoId].setAttribute('src', 'assets/images/bw_pokemon.png');
-                cardScore.push(cardOneId);
-                cardScore.push(cardTwoId);
-            } else {
-                cards[cardOneId].setAttribute('src', 'assets/images/pokemon.png');
-                cards[cardTwoId].setAttribute('src', 'assets/images/pokemon.png');
-            }
-        } 
-
-        if (deck_3 = true) {
-            if (cardOne === cardTwo) {
-                cards[cardOneId].setAttribute('src', 'assets/images/yoda.png');
-                cards[cardTwoId].setAttribute('src', 'assets/images/yoda.png');
-                cardScore.push(cardOneId);
-                cardScore.push(cardTwoId);
-            } else {
-                cards[cardOneId].setAttribute('src', 'assets/images/camera.png');
-                cards[cardTwoId].setAttribute('src', 'assets/images/camera.png');
-            }
-        } 
+        if (cardOne === cardTwo) {
+            cards[cardOneId].setAttribute('src', 'assets/images/bw_backgroound.png');
+            cards[cardTwoId].setAttribute('src', 'assets/images/bw_backgroound.png');
+            cardScore.push(cardOneId);
+            cardScore.push(cardTwoId);
+        } else {
+            cards[cardOneId].setAttribute('src', 'assets/images/background.png');
+            cards[cardTwoId].setAttribute('src', 'assets/images/background.png');
+        }
 
 
         /**
@@ -389,6 +342,4 @@ document.addEventListener('DOMContentLoaded', () => {
         let oldAttempts = parseInt(document.getElementById('attempts').innerText);
         document.getElementById('attempts').innerText = ++oldAttempts;
     }
-
-
 });
