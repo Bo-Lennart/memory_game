@@ -98,6 +98,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    /**
+     * variables declared to push in picked cards
+     */
     let pickedCard = [];
     let pickedCardId = [];
 
@@ -121,6 +124,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
 
+    /**
+     * variable to push in correct cards found
+     */
     let cardScore = [];
     const scoreDisplay = document.getElementById('score');
 
@@ -155,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         /**
-         * add score inside card score and reset array length to run turnCard function again
+         * add score inside card score and reset array length to run turnCard function again. Reset pickedCard and pickedCardId to empty array
          */
         scoreDisplay.textContent = cardScore.length;
         pickedCard = [];
