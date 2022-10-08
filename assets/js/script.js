@@ -188,15 +188,21 @@ document.addEventListener('DOMContentLoaded', () => {
      * functions to set decknumber and target correct loop for the check match
      */
      function setDeckType() {
-        deck_1 = 1;
+        deck_1 = true;
+        deck_2 = false;
+        deck_3 = false;
     }
     
-    function setDeckType() {
-        deck_2 = 1;
+    function setDeckType2() {
+        deck_1 = false;
+        deck_2 = true;
+        deck_3 = false;
     }
 
-    function setDeckType() {
-        deck_3 = 1;
+    function setDeckType3() {
+        deck_1 = false;
+        deck_2 = false;
+        deck_3 = true;
     }
 
     /**
@@ -286,7 +292,7 @@ document.addEventListener('DOMContentLoaded', () => {
         /**
          * if statement to check cards and load img accordingly for pixel deck
          */
-        if (deck_1 = 1) {
+        if (deck_1 = true) {
             if (cardOne === cardTwo) {
                 cards[cardOneId].setAttribute('src', 'assets/images/bw_backgroound.png');
                 cards[cardTwoId].setAttribute('src', 'assets/images/bw_backgroound.png');
@@ -296,8 +302,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 cards[cardOneId].setAttribute('src', 'assets/images/background.png');
                 cards[cardTwoId].setAttribute('src', 'assets/images/background.png');
             }
-        }
-        if (deck_2 = 1) {
+        } 
+
+        if (deck_2 = true) {
             if (cardOne === cardTwo) {
                 cards[cardOneId].setAttribute('src', 'assets/images/bw_pokemon.png');
                 cards[cardTwoId].setAttribute('src', 'assets/images/bw_pokemon.png');
@@ -307,7 +314,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 cards[cardOneId].setAttribute('src', 'assets/images/pokemon.png');
                 cards[cardTwoId].setAttribute('src', 'assets/images/pokemon.png');
             }
-        }
+        } 
+
+        if (deck_3 = true) {
+            if (cardOne === cardTwo) {
+                cards[cardOneId].setAttribute('src', 'assets/images/yoda.png');
+                cards[cardTwoId].setAttribute('src', 'assets/images/yoda.png');
+                cardScore.push(cardOneId);
+                cardScore.push(cardTwoId);
+            } else {
+                cards[cardOneId].setAttribute('src', 'assets/images/camera.png');
+                cards[cardTwoId].setAttribute('src', 'assets/images/camera.png');
+            }
+        } 
+
 
         /**
          * add score inside card score and reset array length to run turnCard function again. Reset pickedCard and pickedCardId to empty array
