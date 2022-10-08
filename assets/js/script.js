@@ -192,11 +192,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     function setDeckType() {
-        deck_2 = 'pokemon';
+        deck_2 = 1;
     }
 
     function setDeckType() {
-        deck_2 = 'hogwarts';
+        deck_3 = 1;
     }
 
     /**
@@ -231,6 +231,19 @@ document.addEventListener('DOMContentLoaded', () => {
             card.addEventListener('click', turnCard);
             gameBoard.appendChild(card);
         }
+        hideStartGame()
+    }
+
+    function callDeck3() {
+        for (let img in cardDeck2) {
+            var card = document.createElement('img');
+            card.setAttribute('src', 'assets/images/yoda.png');
+            card.setAttribute('data-id', img);
+            card.classList.add('card_styling');
+            card.addEventListener('click', turnCard);
+            gameBoard.appendChild(card);
+        }
+        hideStartGame()
     }
 
     /**
@@ -282,6 +295,17 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 cards[cardOneId].setAttribute('src', 'assets/images/background.png');
                 cards[cardTwoId].setAttribute('src', 'assets/images/background.png');
+            }
+        }
+        if (deck_2 = 1) {
+            if (cardOne === cardTwo) {
+                cards[cardOneId].setAttribute('src', 'assets/images/bw_pokemon.png');
+                cards[cardTwoId].setAttribute('src', 'assets/images/bw_pokemon.png');
+                cardScore.push(cardOneId);
+                cardScore.push(cardTwoId);
+            } else {
+                cards[cardOneId].setAttribute('src', 'assets/images/pokemon.png');
+                cards[cardTwoId].setAttribute('src', 'assets/images/pokemon.png');
             }
         }
 
