@@ -50,6 +50,7 @@ p {
 
 button:hover {
     transform: translateY(-7px);
+    transition: 0.3s;
 }
 
 /* styling for card deck choice */
@@ -89,12 +90,14 @@ img {
     height: auto;
     margin: 1%;
     border-radius: 10%;
+    box-shadow: 0px 8px 15px rgba(151, 151, 151, 0.547);
 }
 
 /* hover effect to move game cards when hovering */
 img:hover {
     transform: translateY(-3px);
-    box-shadow: 5px 3px 3px rgb(0, 0, 0);;
+    transition: 0.2s;
+    box-shadow: 0px 8px 15px rgba(255, 255, 255, 0.547);
 }
 
 /* styling for footer and social links - 'The code is taken from previous project portfolio project "Dinder" */
