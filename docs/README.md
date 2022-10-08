@@ -1,10 +1,12 @@
-## Live site
+# Memory Game - Portfolio project 2 - JavaScript
 
-<a href="https://bo-lennart.github.io/memory_game/" target="_blank">Memory Game Page</a>
+Memory Game is an interactive online home page where the use can play a simple, 16 card memory game with 20 tries before game over. 
+
+You can access the site here: <a href="https://bo-lennart.github.io/memory_game/" target="_blank">Memory Game Page</a>
 
 ![IMAGE ALT TEXT HERE](../docs/screenshots/responsive.png)
 
-## Contents
+# Contents
 
 - [Project Goals](#project-goals)
 - [Target audience](#target-audience)
@@ -23,3 +25,6 @@
 - [Credits](#credits)
     - [Content](#content)
     - [Media](#media)
+
+    # Project Goals
+
