@@ -149,9 +149,29 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             name: 'card8',
             img: 'assets/images/yoda.png'
+        },
+
+        {
+            name: 'card9',
+            img: 'assets/images/level_3/letter_y.png'
+        },
+        {
+            name: 'card9',
+            img: 'assets/images/level_3/letter_y.png'
+        },
+
+        {
+            name: 'card10',
+            img: 'assets/images/level_3/letter_b.png'
+        },
+        {
+            name: 'card10',
+            img: 'assets/images/level_3/letter_b.png'
         }
 
     ];
+    /**
+     * Robot card deck */
     const cardDeck3 = [{
             name: 'card1',
             img: 'assets/images/level_3/letter_a.png'
@@ -224,6 +244,42 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             name: 'card8',
             img: 'assets/images/level_3/letter_z.png'
+        },
+
+        {
+            name: 'card9',
+            img: 'assets/images/level_3/letter_.png'
+        },
+        {
+            name: 'card9',
+            img: 'assets/images/level_3/letter_.png'
+        },
+
+        {
+            name: 'card10',
+            img: 'assets/images/level_3/letter_.png'
+        },
+        {
+            name: 'card10',
+            img: 'assets/images/level_3/letter_.png'
+        },
+
+        {
+            name: 'card11',
+            img: 'assets/images/level_3/letter_.png'
+        },
+        {
+            name: 'card11',
+            img: 'assets/images/level_3/letter_.png'
+        },
+
+        {
+            name: 'card12',
+            img: 'assets/images/level_3/letter_.png'
+        },
+        {
+            name: 'card12',
+            img: 'assets/images/level_3/letter_.png'
         }
 
     ];
