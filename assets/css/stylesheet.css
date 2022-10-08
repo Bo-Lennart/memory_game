@@ -184,6 +184,10 @@ ul {
         transform: none;
         box-shadow: none;
     }
+
+    #deck_choice p {
+        font-size: 20px;
+    }
 }
 
  /* styling for screens below 450px */
