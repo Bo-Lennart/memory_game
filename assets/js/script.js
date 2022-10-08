@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
     ];
-    /** POKEMON CARD DECK */
+    /** heartPixel CARD DECK */
     const cardDeck2 = [{
             name: 'card1',
             img: 'assets/images/alarm_clock.png'
@@ -154,76 +154,76 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
     const cardDeck3 = [{
             name: 'card1',
-            img: 'assets/images/alarm_clock.png'
+            img: 'assets/images/level_3/letter_a.png'
         },
         {
             name: 'card1',
-            img: 'assets/images/alarm_clock.png'
+            img: 'assets/images/level_3/letter_a.png'
         },
 
         {
             name: 'card2',
-            img: 'assets/images/camera.png'
+            img: 'assets/images/level_3/letter_b.png'
 
         },
         {
             name: 'card2',
-            img: 'assets/images/camera.png'
+            img: 'assets/images/level_3/letter_b.png'
 
         },
 
         {
             name: 'card3',
-            img: 'assets/images/envelope.png'
+            img: 'assets/images/level_3/letter_h.png'
         },
         {
             name: 'card3',
-            img: 'assets/images/envelope.png'
+            img: 'assets/images/level_3/letter_h.png'
         },
 
         {
             name: 'card4',
-            img: 'assets/images/smiley.png'
+            img: 'assets/images/level_3/letter_i.png'
         },
         {
             name: 'card4',
-            img: 'assets/images/smiley.png'
+            img: 'assets/images/level_3/letter_i.png'
         },
 
         {
             name: 'card5',
-            img: 'assets/images/soup.png'
+            img: 'assets/images/level_3/letter_j.png'
         },
         {
             name: 'card5',
-            img: 'assets/images/soup.png'
+            img: 'assets/images/level_3/letter_j.png'
         },
 
         {
             name: 'card6',
-            img: 'assets/images/timer.png'
+            img: 'assets/images/level_3/letter_t.png'
         },
         {
             name: 'card6',
-            img: 'assets/images/timer.png'
+            img: 'assets/images/level_3/letter_t.png'
         },
 
         {
             name: 'card7',
-            img: 'assets/images/water_drop.png'
+            img: 'assets/images/level_3/letter_y.png'
         },
         {
             name: 'card7',
-            img: 'assets/images/water_drop.png'
+            img: 'assets/images/level_3/letter_y.png'
         },
 
         {
             name: 'card8',
-            img: 'assets/images/yoda.png'
+            img: 'assets/images/level_3/letter_z.png'
         },
         {
             name: 'card8',
-            img: 'assets/images/yoda.png'
+            img: 'assets/images/level_3/letter_z.png'
         }
 
     ];
@@ -279,33 +279,33 @@ document.addEventListener('DOMContentLoaded', () => {
             gameBoard.appendChild(card);
         }
         hideStartGame()
-        deckType = 'pixel';
+        deckType = 'brew';
     }
 
     function callDeck2() {
         for (let img in cardDeck2) {
-            var card = document.createElement('img');
-            card.setAttribute('src', 'assets/images/heart.png');
-            card.setAttribute('data-id', img);
-            card.classList.add('card_styling');
-            card.addEventListener('click', turnCard);
-            gameBoard.appendChild(card);
+            var card2 = document.createElement('img');
+            card2.setAttribute('src', 'assets/images/heart.png');
+            card2.setAttribute('data-id', img);
+            card2.classList.add('card_styling');
+            card2.addEventListener('click', turnCard);
+            gameBoard.appendChild(card2);
         }
         hideStartGame()
-        deckType = 'pokemon';
+        deckType = 'heartPixel';
     }
 
     function callDeck3() {
         for (let img in cardDeck3) {
-            var card = document.createElement('img');
-            card.setAttribute('src', 'assets/images/background.png');
-            card.setAttribute('data-id', img);
-            card.classList.add('card_styling');
-            card.addEventListener('click', turnCard);
-            gameBoard.appendChild(card);
+            var card3 = document.createElement('img');
+            card3.setAttribute('src', 'assets/images/background.png');
+            card3.setAttribute('data-id', img);
+            card3.classList.add('card_styling');
+            card3.addEventListener('click', turnCard);
+            gameBoard.appendChild(card3);
         }
         hideStartGame()
-        deckType = 'hogwarts';
+        deckType = 'robot';
     }
 
     /**
@@ -318,10 +318,11 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log(pickedCardId);
         }
         if (!pickedCardId.includes(cardId) && !cardScore.includes(cardId)) {
-            pickedCard.push(cardDeck[cardId].name);
+            pickedCard.push(cardDeck3[cardId].name);
             pickedCardId.push(cardId);
-            this.setAttribute('src', cardDeck[cardId].img);
+            this.setAttribute('src', cardDeck3[cardId].img);
         }
+
         if (pickedCard.length === 2) {
             setTimeout(checkForMatch, 700);
         }
@@ -346,14 +347,14 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log("cardTwo:", cardTwo);
 
         /**
-         * if statement to check cards and load img accordingly for pixel deck
+         * if statement to check cards and load img accordingly for brew deck
          */
 
-        if (deckType === "pixel") {
+        if (deckType === "brew") {
             setBackgroundOnCard('assets/images/bw_brew.png', 'assets/images/brew.png');
-        } else if (deckType === "pokemon") {
+        } else if (deckType === "heartPixel") {
             setBackgroundOnCard('assets/images/bw_heart.png', 'assets/images/heart.png');
-        } else if (deckType === "hogwarts") {
+        } else if (deckType === "robot") {
             setBackgroundOnCard('assets/images/bw_background.png', 'assets/images/background.png');
         }
 
