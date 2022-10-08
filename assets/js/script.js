@@ -491,7 +491,7 @@ document.addEventListener('DOMContentLoaded', () => {
         /**
          * When game is done. Hide game board
          */
-        if (cardScore.length === deckSize.length || attempts === 20) {
+        if (scoreDisplay.textContent == deckSize.length || attempts === 20) {
             document.getElementById('game_body').style.display = 'none';
 
             /**
