@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
+/* add basic styling to body */
 body {
     text-align: center;
     justify-content: center;
@@ -10,6 +11,7 @@ body {
     position: center;
 }
 
+/* add stylinng attempts and cards won */
 #text_board {
     display: flex;
     flex-direction: column;
@@ -18,12 +20,16 @@ body {
     margin: 3% 25%;
 }
 
+/* add styling to paragraph texts */
+
 p {
     max-width: 100%;
     border: #ffffff solid 2px;
     width: 100%;
     margin-top: 0;
 }
+
+/* add styling to rule list */
 
 #rules {
     border: none;
@@ -34,20 +40,20 @@ p {
     list-style: none;
 }
 
+/* add styling to game body */
+
 #game_body {
     width: 575px;
     margin: 0% auto;
 }
 
+/* hover effect for new game button */
+
 button:hover {
     transform: translateY(-7px);
 }
 
-#game_field {
-    display: flex;
-    flex-wrap: wrap;
-}
-
+/* styling for game cards */
 img {
     max-width: 130px;
     height: auto;
@@ -55,11 +61,13 @@ img {
     border-radius: 10%;
 }
 
+/* hover effect to move game cards when hovering */
 img:hover {
     transform: translateY(-3px);
     box-shadow: 5px 3px 3px rgb(0, 0, 0);;
 }
 
+/* styling for footer and social links - 'The code is taken from previous project portfolio project "Dinder" */
 footer {
     height: 40px;
     display: inline;
@@ -83,6 +91,7 @@ ul {
 }
 
 
+/* styling for screens below 1000px */
 @media screen and (max-width: 1000px) {
     body {
         font-size: 25px;
@@ -90,6 +99,7 @@ ul {
 
 }
 
+/* styling for screens below 850 */
 @media screen and (max-width: 850px)  {
     body {
         font-size: 20px;
@@ -112,12 +122,14 @@ ul {
         font-size: 14px;
     }
 
+    /* remove hover effects as touch pads have no pointer */
     img:hover {
         transform: none;
         box-shadow: none;
     }
 }
 
+ /* styling for screens below 450px */
 
 @media screen and (max-width: 450px)  {
     body {
