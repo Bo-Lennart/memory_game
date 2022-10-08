@@ -288,7 +288,7 @@ document.addEventListener('DOMContentLoaded', () => {
             card2.setAttribute('src', 'assets/images/heart.png');
             card2.setAttribute('data-id', img);
             card2.classList.add('card_styling');
-            card2.addEventListener('click', turnCard);
+            card2.addEventListener('click', turnCard2);
             gameBoard.appendChild(card2);
         }
         hideStartGame()
@@ -301,7 +301,7 @@ document.addEventListener('DOMContentLoaded', () => {
             card3.setAttribute('src', 'assets/images/background.png');
             card3.setAttribute('data-id', img);
             card3.classList.add('card_styling');
-            card3.addEventListener('click', turnCard);
+            card3.addEventListener('click', turnCard3);
             gameBoard.appendChild(card3);
         }
         hideStartGame()
@@ -309,13 +309,45 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /**
-     * turn card function
+     * turn card functions for the different deck level difficulties
      */
 
     function turnCard() {
         if (pickedCardId.length < 2) {
             var cardId = this.getAttribute('data-id');
-            console.log(pickedCardId);
+            console.log(cardId);
+        }
+        if (!pickedCardId.includes(cardId) && !cardScore.includes(cardId)) {
+            pickedCard.push(cardDeck[cardId].name);
+            pickedCardId.push(cardId);
+            this.setAttribute('src', cardDeck[cardId].img);
+        }
+
+        if (pickedCard.length === 2) {
+            setTimeout(checkForMatch, 700);
+        }
+
+    }
+    function turnCard2() {
+        if (pickedCardId.length < 2) {
+            var cardId = this.getAttribute('data-id');
+            console.log(cardId);
+        }
+        if (!pickedCardId.includes(cardId) && !cardScore.includes(cardId)) {
+            pickedCard.push(cardDeck2[cardId].name);
+            pickedCardId.push(cardId);
+            this.setAttribute('src', cardDeck2[cardId].img);
+        }
+
+        if (pickedCard.length === 2) {
+            setTimeout(checkForMatch, 700);
+        }
+
+    }
+    function turnCard3() {
+        if (pickedCardId.length < 2) {
+            var cardId = this.getAttribute('data-id');
+            console.log(cardId);
         }
         if (!pickedCardId.includes(cardId) && !cardScore.includes(cardId)) {
             pickedCard.push(cardDeck3[cardId].name);
