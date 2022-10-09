@@ -4,9 +4,9 @@
 body {
     text-align: center;
     justify-content: center;
-    background-color: #a3cef1;
+    background-color: #6b705c;
     font-family: 'Share Tech Mono', monospace;
-    color: #000000;
+    color: #ffffff;
     font-size: 30px;
 }
 
@@ -204,6 +204,10 @@ ul {
         height: 70px; 
         width: 70px; 
         font-size: 15px;
+    }
+
+    h4 {
+        font-size: 17px;
     }
 
     #game_body {
