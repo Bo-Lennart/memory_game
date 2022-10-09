@@ -4,9 +4,9 @@
 body {
     text-align: center;
     justify-content: center;
-    background-color: #14213d;
+    background-color: #a3cef1;
     font-family: 'Share Tech Mono', monospace;
-    color: #ffffff;
+    color: #000000;
     font-size: 30px;
 }
 
@@ -201,8 +201,8 @@ ul {
     }
 
     .card_deck_button {
-        height: 60px; 
-        width: 60px; 
+        height: 70px; 
+        width: 70px; 
         font-size: 15px;
     }
 
@@ -213,7 +213,7 @@ ul {
     }
 
     #deck_choice p {
-        font-size: 11px;
+        font-size: 12px;
     }
 
     img {
