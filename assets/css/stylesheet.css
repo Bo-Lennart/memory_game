@@ -212,6 +212,10 @@ ul {
         margin: 0% auto;
     }
 
+    #deck_choice p {
+        font-size: 11px;
+    }
+
     img {
         height: 60px;
         width: 60px;
