@@ -4,9 +4,10 @@
 body {
     text-align: center;
     justify-content: center;
-    background-color: #669bbc;
+    background-image: url('../images/custom_bg.png');
+    background-size: cover;
     font-family: 'Share Tech Mono', monospace;
-    color: #ffffff;
+    color: #000000;
     font-size: 30px;
 }
 
@@ -23,20 +24,29 @@ body {
 
 p {
     max-width: 100%;
-    border: #ffffff solid 2px;
+    border: #000000 solid 2px;
     width: 100%;
     margin-top: 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-text-stroke: 0.01px rgb(255, 255, 255);
 }
 
 /* add styling to rule list */
 
 #rules {
+    text-align: center;
     border: none;
-    text-align: left;
+    width: 40%;
+    margin-left: 30%;
     font-size: 17px;
     padding: 0;
-    margin: 0;
     list-style: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: #000000 solid 2px;
+}
+
+#rules li {
+    text-align: left;
 }
 
 /* add styling to game body */
@@ -120,7 +130,7 @@ ul {
 
 .social_icon a {
     font-size: 35px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 /* styling for p element for deck choice */
@@ -180,6 +190,8 @@ ul {
 
     #rules {
         font-size: 14px;
+        width: 70%;
+        margin-left: 15%;
     }
 
     /* remove hover effects as touch pads have no pointer */
@@ -208,6 +220,12 @@ ul {
 
     h4 {
         font-size: 17px;
+    }
+
+    #rules {
+        width: 90%;
+        font-size: 12px;
+        margin-left: 5%;
     }
 
     #game_body {
