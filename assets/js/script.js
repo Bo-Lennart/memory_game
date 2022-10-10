@@ -477,6 +477,9 @@ document.addEventListener('DOMContentLoaded', () => {
         pickedCard = [];
         pickedCardId = [];
 
+        failScore = (deckSize - cardScore)/2;
+        console.log(cardScore);
+
         incrementAttempts();
 
         /**
@@ -487,7 +490,7 @@ document.addEventListener('DOMContentLoaded', () => {
         /**
          * When game is done. Hide game board
          */
-        if (cardScore.length === deckSize || attempts === 20) {
+        if (cardScore.length === deckSize || attempts === 20 || failScore + attempts === 20) {
             document.getElementById('game_body').style.display = 'none';
 
             /**
