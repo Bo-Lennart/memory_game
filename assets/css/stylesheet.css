@@ -45,8 +45,9 @@ p {
     border: #000000 solid 2px;
 }
 
-#rules li {
+.rule_list {
     text-align: left;
+    list-style-type: circle;
 }
 
 /* add styling to game body */
@@ -164,6 +165,12 @@ ul {
         font-size: 25px;
     }
 
+    #rules {
+        font-size: 14px;
+        width: 60%;
+        margin-left: 20%;
+    }
+
 }
 
 /* styling for screens below 850 */
@@ -186,12 +193,6 @@ ul {
         max-width: 100px;
         height: 100px;
         background-position: center;
-    }
-
-    #rules {
-        font-size: 14px;
-        width: 70%;
-        margin-left: 15%;
     }
 
     /* remove hover effects as touch pads have no pointer */
