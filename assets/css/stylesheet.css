@@ -4,11 +4,13 @@
 body {
     text-align: center;
     justify-content: center;
-    background-image: url('../images/custom_bg.png');
-    background-size: cover;
     font-family: 'Share Tech Mono', monospace;
     color: #000000;
     font-size: 30px;
+}
+
+#call_for_reload {
+    background-image: url('../images/custom_bg.png');
 }
 
 /* add stylinng attempts and cards won */

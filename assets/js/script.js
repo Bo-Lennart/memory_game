@@ -496,6 +496,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (cardScore.length === deckSize || attempts === 20 || failScore + attempts === 20) {
             document.getElementById('game_body').style.display = 'none';
 
+            var el = document.getElementById("call_for_reload").style.backgroundImage;
+            if(el == "url(../images/custom_bg.png)") { // full value is provided
+            el.style.backgroundImage = ""; // change it
+            }
+
             /**
              * creates button element with styling in html element that refreshes page when clicked
              */
