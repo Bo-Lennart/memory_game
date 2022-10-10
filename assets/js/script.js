@@ -477,6 +477,9 @@ document.addEventListener('DOMContentLoaded', () => {
         pickedCard = [];
         pickedCardId = [];
 
+        /**
+         * failScore to calculate sum of deckSize left in order to trigger end game if to little attempts left
+         */
         failScore = (deckSize - cardScore.length)/2;
         console.log(cardScore.length);
 
@@ -507,7 +510,7 @@ document.addEventListener('DOMContentLoaded', () => {
             body.appendChild(newGame);
             newGame.addEventListener('click', refreshPage);
 
-            if (attempts === 20) {
+            if (attempts === 20 || failScore + attempts === 20) {
                 body = document.getElementById('call_for_reload');
                 body.setAttribute('style', 'background-color: #9e2a2b;');
                 var loser = document.createElement('h2');
