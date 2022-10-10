@@ -10,7 +10,7 @@ body {
 }
 
 #call_for_reload {
-    background-image: url('../images/custom_bg.png');
+    background-image: url('/assets/images/custom_bg.png');
 }
 
 /* add stylinng attempts and cards won */

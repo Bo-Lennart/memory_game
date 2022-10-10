@@ -512,14 +512,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (attempts === 20 || failScore + attempts === 20) {
                 body = document.getElementById('call_for_reload');
-                body.setAttribute('style', 'background-color: #9e2a2b;');
+                body.setAttribute('style', 'color: #9e2a2b;');
                 var loser = document.createElement('h2');
                 body.appendChild(loser);
                 loser.innerHTML = "You LOST!"
 
             } else {
                 body = document.getElementById('call_for_reload');
-                body.setAttribute('style', 'background-color: #a3b18a;');
+                body.setAttribute('style', 'color: rgb(145, 235, 137);');
                 var loser = document.createElement('h2');
                 body.appendChild(loser);
                 loser.innerHTML = "You WON!! CONGRATS!"
