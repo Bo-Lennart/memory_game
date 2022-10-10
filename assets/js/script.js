@@ -477,8 +477,8 @@ document.addEventListener('DOMContentLoaded', () => {
         pickedCard = [];
         pickedCardId = [];
 
-        failScore = (deckSize - cardScore)/2;
-        console.log(cardScore);
+        failScore = (deckSize - cardScore.length)/2;
+        console.log(cardScore.length);
 
         incrementAttempts();
 
