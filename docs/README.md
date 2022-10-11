@@ -38,3 +38,18 @@ The aim of this project is to deliver an interactive game that is pleasing visua
 * To provide full responsive design in order to be able to play the game from different devices, such as, mobile phone, tablets or desktop screens.
 * To provide an easy, understandable interactive experience for the use to navigate through the game.
 * To provide a challenging game that is enjoyable but still challengning so the use can return to try the different levels.
+
+## User Stories
+
+The **user** is any person who likes simple, digital games.
+
+| ID | ROLE | ACTION |
+|-----------------|:-------------|:---------------:|
+| 1 | User | As a user, I want to be able to play memory | So I can have some fun|
+| 2 | User | As a user, I want to navigate around the interface easily |
+| 3 | User | As a user, I want to be able to play the game across all devices |
+| 4 | User | As a user, I want the option of increased difficulty |
+| 5 | User | As a user, I want to be able to start the game when I am ready |
+| 6 | User | As a user, I want to be able to know my score |
+| 7 | User | As a user, I want to be able to start a new game when the current one ends |
+| 8 | User | As a user, I want the game to get progressively more difficult, so it's fun yet challenging |
