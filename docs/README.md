@@ -57,7 +57,9 @@ The **user** is any person who likes simple, digital games.
 
 ## Color Scheme
 
-The color palette is inspired of a playfulness in order to match the pixel figures that are placed on the background. The themes of the memory game is "pixels" and therefore all the cards have a pixel styled layout.
+The color palette is inspired of a playfulness in order to match the pixel figures that are placed on the background. The theme of the memory game is "pixels" and therefore all the cards have a pixel-figure styled layout.
 
 ![IMAGE ALT TEXT HERE](../docs/screenshots/color_palette.png)
 ![IMAGE ALT TEXT HERE](../docs/screenshots/pixel_figures.png)
+
+The three difficulty levels are picked out of pixel images and they become less and move towards letters with different dificulty levels. The third level consits only of images.
