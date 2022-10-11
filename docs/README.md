@@ -33,3 +33,8 @@ The aim of this project is to deliver an interactive game that is pleasing visua
 # UX User Experience 
 
 ## Site Aims
+* To provide a simple interactive memory game with three levels of difficulty.
+* To create a system that challenges the use to replay and have a goal to clear all three difficulty levels.
+* To provide full responsive design in order to be able to play the game from different devices, such as, mobile phone, tablets or desktop screens.
+* To provide an easy, understandable interactive experience for the use to navigate through the game.
+* To provide a challenging game that is enjoyable but still challengning so the use can return to try the different levels.
