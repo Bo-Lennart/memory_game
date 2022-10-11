@@ -84,18 +84,18 @@ button:hover {
 
 /* Pixel Deck choice styling */
 #card_deck_1 {
-    background-image: url('../images/brew.png');
+    background-image: url('../images/card_level_1.png');
     background-size: cover;
 }
 
 /* pokemon deck */
 #card_deck_2 {
-    background-image: url('../images/heart.png');
+    background-image: url('../images/card_level_2.png');
     background-size: cover;
 }
 
 #card_deck_3 {
-    background-image: url('../images/background.png');
+    background-image: url('../images/card_level_3.png');
     background-size: cover;
 }
 
@@ -142,26 +142,6 @@ ul {
 #deck_choice p {
     border: none;
 }
-
-#level_1 {
-    color: rgb(145, 235, 137);
-    margin-top: 80%;
-    background-color: rgb(0, 0, 0);
-}
-
-#level_2 {
-    color: rgb(249, 197, 100);
-    margin-top: 80%;
-    background-color: black;
-}
-
-#level_3 {
-    color: rgb(248, 86, 86);
-    margin-top: 80%;
-    background-color: black;
-}
-
-
 
 /* styling for screens below 1000px */
 @media screen and (max-width: 1000px) {
