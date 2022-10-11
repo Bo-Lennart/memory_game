@@ -350,7 +350,7 @@ document.addEventListener('DOMContentLoaded', () => {
             card2.addEventListener('click', turnCard2);
             gameBoard.appendChild(card2);
         }
-        hideStartGame()
+        hideStartGame();
         deckType = 'heartPixel';
     }
 
@@ -363,7 +363,7 @@ document.addEventListener('DOMContentLoaded', () => {
             card3.addEventListener('click', turnCard3);
             gameBoard.appendChild(card3);
         }
-        hideStartGame()
+        hideStartGame();
         deckType = 'robot';
     }
 
@@ -483,7 +483,7 @@ document.addEventListener('DOMContentLoaded', () => {
         /**
          * failScore to calculate sum of deckSize left in order to trigger end game if to little attempts left
          */
-        failScore = (deckSize - cardScore.length)/2;
+        let failScore = (deckSize - cardScore.length)/2;
         console.log(cardScore.length);
 
         incrementAttempts();
@@ -518,14 +518,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 body.setAttribute('style', 'background-color: #9e2a2b;');
                 var loser = document.createElement('h2');
                 body.appendChild(loser);
-                loser.innerHTML = "You LOST!"
+                loser.innerHTML = "You LOST!";
 
             } else {
                 body = document.getElementById('rules');
                 body.setAttribute('style', 'background-color: rgb(145, 235, 137);');
-                var loser = document.createElement('h2');
+                loser = document.createElement('h2');
                 body.appendChild(loser);
-                loser.innerHTML = "You WON!! CONGRATS!"
+                loser.innerHTML = "You WON!! CONGRATS!";
             }
 
         }
