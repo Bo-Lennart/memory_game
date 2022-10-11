@@ -33,7 +33,7 @@ p {
     border: #000000 solid 2px;
     width: 100%;
     margin-top: 0;
-    background-color:rgba(255, 255, 255, 0.4);
+    background-color:rgba(255, 255, 255, 0.8);
     -webkit-text-stroke: 0.01px rgb(0, 0, 0);
 }
 
@@ -47,7 +47,7 @@ p {
     font-size: 17px;
     padding: 2%;
     list-style: none;
-    background-color:rgba(255, 255, 255, 0.3);
+    background-color:rgba(255, 255, 255, 0.8);
     border: #000000 solid 2px;
 }
 
