@@ -11,9 +11,8 @@ body {
 
 #call_for_reload {
     background-image: url('../images/custom_bg.png');
-    height: 100%;
+    width: 100%;
     background-position: center;
-    background-size: cover;
 }
 
 /* add stylinng attempts and cards won */
