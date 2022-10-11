@@ -290,6 +290,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let pickedCard = [];
     let pickedCardId = [];
 
+    let deckType;
+
     /**
      * variable to push in correct cards found
      */
@@ -334,7 +336,7 @@ document.addEventListener('DOMContentLoaded', () => {
             card.addEventListener('click', turnCard);
             gameBoard.appendChild(card);
         }
-        hideStartGame()
+        hideStartGame();
         deckType = 'brew';
     }
 
