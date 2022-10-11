@@ -54,3 +54,9 @@ The **user** is any person who likes simple, digital games.
 | 7 | User | As a user, I want to be able to start a new game when the current one ends |
 | 8 | User | As a user, I want the game to get progressively more difficult, so it's fun yet challenging |
 | 9 | User | As a user, I want the game end when I have to little tries left to win the level |
+
+## Color Scheme
+
+The color palette is inspired of a playfulness in order to match the pixel figures that are placed on the background. The themes of the memory game is "pixels" and therefore all the cards have a pixel styled layout.
+
+![IMAGE ALT TEXT HERE](../docs/screenshots/color_palette.png)
