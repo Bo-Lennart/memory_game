@@ -53,4 +53,4 @@ The **user** is any person who likes simple, digital games.
 | 6 | User | As a user, I want to be able to know my score |
 | 7 | User | As a user, I want to be able to start a new game when the current one ends |
 | 8 | User | As a user, I want the game to get progressively more difficult, so it's fun yet challenging |
-| 9 | User | As a user, I want the game show game over when I have to little tries left to win the level |
+| 9 | User | As a user, I want the game end when I have to little tries left to win the level |
