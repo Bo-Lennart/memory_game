@@ -248,11 +248,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         {
             name: 'card9',
-            img: 'assets/images/level_3/letter_w.png'
+            img: 'assets/images/level_3/letter_v.png'
         },
         {
             name: 'card9',
-            img: 'assets/images/level_3/letter_w.png'
+            img: 'assets/images/level_3/letter_v.png'
         },
 
         {
