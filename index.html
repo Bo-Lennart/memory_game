@@ -13,58 +13,59 @@
 <!-- call for reload id added to body in order to target from JS -->
 
 <body id="call_for_reload">
-        <!-- game board -->
-        <div id="text_board">
-            <p>Cards Won:
-                <span id="score">0
-                </span>
-            </p>
+    <!-- game board -->
+    <div id="text_board">
+        <p>Cards Won:
+            <span id="score">0
+            </span>
+        </p>
 
-            <p>Attempts:
-                <span id="attempts">0
-                </span>
-            </p>
+        <p>Attempts:
+            <span id="attempts">0
+            </span>
+        </p>
 
-            <ul id="rules">
-                <li>Rules:</li>
-                <li class="rule_list">- 20 attempts.</li>
-                <li class="rule_list">- Find all pairs.</li>
+        <ul id="rules">
+            <li>Rules:</li>
+            <li class="rule_list">- 20 attempts.</li>
+            <li class="rule_list">- Find all pairs.</li>
+        </ul>
+    </div>
+    <!-- this is where the cards get added into when  callDeck() in JS is initiated-->
+    <div id="game_body">
+        <div id="deck_choice">
+            <h4>Choose a Card Deck to start</h4>
+            <button class="card_deck_button" id="card_deck_1"></button>
+
+            <button class="card_deck_button" id="card_deck_2"></button>
+
+            <button class="card_deck_button" id="card_deck_3"></button>
+
+        </div>
+        <div id="game_field">
+        </div>
+    </div>
+
+
+    <!-- footer with links to social media such as LinkedIN and GitHub -->
+    <footer>
+        <div id="social_media_links">
+            <ul>
+                <li class="social_icon"><a href="https://www.linkedin.com/in/bobo/" target="_blank"
+                        aria-label="visit Linkedin page"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li class="social_icon"><a href="https://github.com/Bo-Lennart" target="_blank"
+                        aria-label="visit Github page">
+                        <i class="fa-brands fa-github"></i></a></li>
+                <li class="social_icon"><a href="https://www.facebook.com/" target="_blank"
+                        aria-label="visit Facebook page">
+                        <i class="fa-brands fa-square-facebook"></i></a>
+                </li>
             </ul>
         </div>
-        <!-- this is where the cards get added into when  callDeck() in JS is initiated-->
-        <div id="game_body">
-            <div id="deck_choice">
-                <h4>Choose a Card Deck to start</h4>
-                <button class="card_deck_button" id="card_deck_1"></button>
-
-                <button class="card_deck_button" id="card_deck_2"></button>
-
-                <button class="card_deck_button" id="card_deck_3"></button>
-
-            </div>
-            <div id="game_field">
-            </div>
-        </div>
-    
+    </footer>
 
     <script src="https://kit.fontawesome.com/9cc43cc6da.js" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
 </body>
-<!-- footer with links to social media such as LinkedIN and GitHub -->
-<footer>
-    <div id="social_media_links">
-        <ul>
-            <li class="social_icon"><a href="https://www.linkedin.com/in/bobo/" target="_blank"
-                    aria-label="visit Linkedin page"><i class="fa-brands fa-linkedin"></i></a></li>
-            <li class="social_icon"><a href="https://github.com/Bo-Lennart" target="_blank"
-                    aria-label="visit Github page">
-                    <i class="fa-brands fa-github"></i></a></li>
-            <li class="social_icon"><a href="https://www.facebook.com/" target="_blank"
-                    aria-label="visit Facebook page">
-                    <i class="fa-brands fa-square-facebook"></i></a>
-            </li>
-        </ul>
-    </div>
-</footer>
 
 </html>
