@@ -63,3 +63,5 @@ The color palette is inspired of a playfulness in order to match the pixel figur
 ![IMAGE ALT TEXT HERE](../docs/screenshots/pixel_figures.png)
 
 The three difficulty levels are picked out of pixel images and they become less and move towards letters with different dificulty levels. The third level consits only of images.
+
+![IMAGE ALT TEXT HERE](../docs/screenshots/deck_types.png)
