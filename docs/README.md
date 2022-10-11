@@ -60,3 +60,4 @@ The **user** is any person who likes simple, digital games.
 The color palette is inspired of a playfulness in order to match the pixel figures that are placed on the background. The themes of the memory game is "pixels" and therefore all the cards have a pixel styled layout.
 
 ![IMAGE ALT TEXT HERE](../docs/screenshots/color_palette.png)
+![IMAGE ALT TEXT HERE](../docs/screenshots/pixel_figures.png)
