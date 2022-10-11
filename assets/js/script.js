@@ -290,6 +290,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let pickedCard = [];
     let pickedCardId = [];
 
+    /**declare variable to identify which deck is picked */
     let deckType;
 
     /**
