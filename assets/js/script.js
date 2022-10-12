@@ -329,33 +329,41 @@ document.addEventListener('DOMContentLoaded', () => {
      * Create game board out of cardDeck array
      */
     function callDeck() {
+        deckType = 'brew';
         for (let img in cardDeck) {
+            if(deckType == 'brew') {
             let card = document.createElement('img');
             card.setAttribute('src', 'assets/images/brew.png');
             card.setAttribute('data-id', img);
             card.classList.add('card_styling');
             card.addEventListener('click', turnCard);
             gameBoard.appendChild(card);
+            }
         }
         hideStartGame();
-        deckType = 'brew';
+        
     }
 
     function callDeck2() {
+        deckType = 'heartPixel';
         for (let img in cardDeck2) {
+            if (deckType == 'heartPixel') {
             let card2 = document.createElement('img');
             card2.setAttribute('src', 'assets/images/heart.png');
             card2.setAttribute('data-id', img);
             card2.classList.add('card_styling');
             card2.addEventListener('click', turnCard2);
             gameBoard.appendChild(card2);
+            }
         }
         hideStartGame();
-        deckType = 'heartPixel';
+
     }
 
     function callDeck3() {
+        deckType = 'robot';
         for (let img in cardDeck3) {
+            if (deckType == 'robot') {
             let card3 = document.createElement('img');
             card3.setAttribute('src', 'assets/images/background.png');
             card3.setAttribute('data-id', img);
@@ -363,8 +371,8 @@ document.addEventListener('DOMContentLoaded', () => {
             card3.addEventListener('click', turnCard3);
             gameBoard.appendChild(card3);
         }
+        }
         hideStartGame();
-        deckType = 'robot';
     }
 
     /**
@@ -373,11 +381,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function turnCard() {
         let cardId;
+        if (pickedCardId.length < 2) {
+            cardId = this.getAttribute('data-id');
+            console.log(cardId);
+        }
         if (!pickedCardId.includes(cardId) && !cardScore.includes(cardId)) {
-            if (pickedCardId.length < 2) {
-                cardId = this.getAttribute('data-id');
-                console.log(cardId);
-            }
             if(pickedCardId.length === 2) {
                 return;
             } else {
@@ -395,11 +403,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function turnCard2() {
         let cardId;
-      if (!pickedCardId.includes(cardId) && !cardScore.includes(cardId)) {
-            if (pickedCardId.length < 2) {
-                cardId = this.getAttribute('data-id');
-                console.log(cardId);
-            }
+        if (pickedCardId.length < 2) {
+            cardId = this.getAttribute('data-id');
+            console.log(cardId);
+        }
+        if (!pickedCardId.includes(cardId) && !cardScore.includes(cardId)) {
             if(pickedCardId.length === 2) {
                 return;
             } else {
@@ -448,7 +456,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const cardTwoId = pickedCardId[1];
 
         console.log("cardOneId:", cardOneId);
-        console.log("cardOneId:", cardTwoId);
+        console.log("cardTwoId:", cardTwoId);
 
         const cardOne = pickedCard[0];
         const cardTwo = pickedCard[1];
@@ -471,7 +479,7 @@ document.addEventListener('DOMContentLoaded', () => {
             deckSize = cardDeck3.length;
         }
 
-        console.log(deckType)
+        console.log(deckType);
 
         /**
          * Function to check if card is a match and sett correct background accordingly
@@ -513,6 +521,7 @@ document.addEventListener('DOMContentLoaded', () => {
          * When game is done. Hide game board
          */
         if (cardScore.length === deckSize || attempts === 20 || failScore + attempts === 20) {
+            let loser;
             document.getElementById('game_body').style.display = 'none';
 
             /**
@@ -532,7 +541,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (attempts === 20 || failScore + attempts === 20) {
                 body = document.getElementById('rules');
                 body.setAttribute('style', 'background-color: #9e2a2b;');
-                let loser = document.createElement('h2');
+                loser = document.createElement('h2');
                 body.appendChild(loser);
                 loser.innerHTML = "You LOST!";
 
