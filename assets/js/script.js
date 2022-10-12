@@ -372,8 +372,11 @@ document.addEventListener('DOMContentLoaded', () => {
      */
 
     function turnCard() {
-        let cardId = this.getAttribute('data-id');
         if (!pickedCardId.includes(cardId) && !cardScore.includes(cardId)) {
+            if (pickedCardId.length < 2) {
+                var cardId = this.getAttribute('data-id');
+                console.log(cardId);
+            }
             if(pickedCardId.length === 2) {
                 return;
             } else {
@@ -390,8 +393,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function turnCard2() {
-        let cardId = this.getAttribute('data-id');
-        if (!pickedCardId.includes(cardId) && !cardScore.includes(cardId)) {
+      if (!pickedCardId.includes(cardId) && !cardScore.includes(cardId)) {
+            if (pickedCardId.length < 2) {
+                var cardId = this.getAttribute('data-id');
+                console.log(cardId);
+            }
             if(pickedCardId.length === 2) {
                 return;
             } else {
@@ -408,7 +414,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function turnCard3() {
-        let cardId = this.getAttribute('data-id');
+        if (pickedCardId.length < 2) {
+            var cardId = this.getAttribute('data-id');
+            console.log(cardId);
+        }
         if (!pickedCardId.includes(cardId) && !cardScore.includes(cardId)) {
             if(pickedCardId.length === 2) {
                 return;
