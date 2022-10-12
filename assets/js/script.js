@@ -437,8 +437,10 @@ document.addEventListener('DOMContentLoaded', () => {
     /**
      * function to check for match
      */
+    let cards;
+    let deckSize;
     function checkForMatch() {
-        var cards = document.getElementsByTagName('img');
+        cards = document.getElementsByTagName('img');
         const cardOneId = pickedCardId[0];
         const cardTwoId = pickedCardId[1];
 
@@ -451,7 +453,6 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log("cardOne:", cardOne);
         console.log("cardTwo:", cardTwo);
 
-        var deckSize;
         /**
          * if statement to check cards and load img accordingly for brew deck
          */
