@@ -372,10 +372,7 @@ document.addEventListener('DOMContentLoaded', () => {
      */
 
     function turnCard() {
-        if (pickedCardId.length < 2) {
-            var cardId = this.getAttribute('data-id');
-            console.log(cardId);
-        }
+        let cardId = this.getAttribute('data-id');
         if (!pickedCardId.includes(cardId) && !cardScore.includes(cardId)) {
             if(pickedCardId.length === 2) {
                 return;
@@ -393,10 +390,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function turnCard2() {
-        if (pickedCardId.length < 2) {
-            var cardId = this.getAttribute('data-id');
-            console.log(cardId);
-        }
+        let cardId = this.getAttribute('data-id');
         if (!pickedCardId.includes(cardId) && !cardScore.includes(cardId)) {
             if(pickedCardId.length === 2) {
                 return;
@@ -414,10 +408,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function turnCard3() {
-        if (pickedCardId.length < 2) {
-            var cardId = this.getAttribute('data-id');
-            console.log(cardId);
-        }
+        let cardId = this.getAttribute('data-id');
         if (!pickedCardId.includes(cardId) && !cardScore.includes(cardId)) {
             if(pickedCardId.length === 2) {
                 return;
@@ -514,21 +505,21 @@ document.addEventListener('DOMContentLoaded', () => {
             /**
              * creates button element with styling in html element that refreshes page when clicked
              */
-            var newGame = document.createElement('button');
+            let newGame = document.createElement('button');
             newGame.classList.add("new_game_button");
             newGame.setAttribute(
                 'style',
                 'height: 100px; width: 100px; background-color: black; color: white; font-size: 25px; margin-top: 10%; border-radius: 10%; font-family: Share Tech Mono, monospace; box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);'
             );
             newGame.innerHTML = "New Game";
-            var body = document.getElementById('rules');
+            let body = document.getElementById('rules');
             body.appendChild(newGame);
             newGame.addEventListener('click', refreshPage);
 
             if (attempts === 20 || failScore + attempts === 20) {
                 body = document.getElementById('rules');
                 body.setAttribute('style', 'background-color: #9e2a2b;');
-                var loser = document.createElement('h2');
+                let loser = document.createElement('h2');
                 body.appendChild(loser);
                 loser.innerHTML = "You LOST!";
 
