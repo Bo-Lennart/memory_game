@@ -12,7 +12,7 @@ You can access the site here: <a href="https://bo-lennart.github.io/memory_game/
 - [UX User Experience](#ux-user-eperience)
     - [Site Aims](#site-aims)
     - [User Stories](#user-stories)
-    - [Color Scheme](#color-schemes)
+    - [Color Scheme](#color-scheme)
 - [Features](#features)
 
 - [Testing](#footer)
@@ -65,3 +65,4 @@ The color palette is inspired of a playfulness in order to match the pixel figur
 The three difficulty levels are picked out of pixel images and they become less and move towards letters with different dificulty levels. The third level consits only of images.
 
 ![IMAGE ALT TEXT HERE](../docs/screenshots/deck_types.png)
+

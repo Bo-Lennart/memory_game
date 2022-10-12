@@ -31,7 +31,8 @@ body {
 p {
     max-width: 100%;
     border: #000000 solid 2px;
-    width: 100%;
+    width: 70%;
+    margin-left: 15%;
     margin-top: 0;
     background-color:rgba(255, 255, 255, 0.8);
     -webkit-text-stroke: 0.01px rgb(0, 0, 0);
@@ -48,6 +49,18 @@ p {
     padding: 2%;
     list-style: none;
     background-color:rgba(255, 255, 255, 0.8);
+    border: #000000 solid 2px;
+}
+
+#benefits {
+    text-align: left;
+    color: white;
+    border: none;
+    width: 50%;
+    margin-left: 25%;
+    font-size: 17px;
+    list-style: none;
+    background-color:rgba(0, 0, 0, 0.8);
     border: #000000 solid 2px;
 }
 
@@ -154,6 +167,9 @@ ul {
         font-size: 14px;
         width: 60%;
         margin-left: 20%;
+    }
+    #benefits {
+        font-size: 14px;
     }
 
 }
