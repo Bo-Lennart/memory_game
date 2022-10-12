@@ -377,9 +377,13 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log(cardId);
         }
         if (!pickedCardId.includes(cardId) && !cardScore.includes(cardId)) {
+            if(pickedCardId.length === 2) {
+                return;
+            } else {
             pickedCard.push(cardDeck[cardId].name);
             pickedCardId.push(cardId);
             this.setAttribute('src', cardDeck[cardId].img);
+            }
         }
 
         if (pickedCard.length === 2) {
@@ -394,9 +398,13 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log(cardId);
         }
         if (!pickedCardId.includes(cardId) && !cardScore.includes(cardId)) {
+            if(pickedCardId.length === 2) {
+                return;
+            } else {
             pickedCard.push(cardDeck2[cardId].name);
             pickedCardId.push(cardId);
             this.setAttribute('src', cardDeck2[cardId].img);
+            }
         }
 
         if (pickedCard.length === 2) {
@@ -411,9 +419,13 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log(cardId);
         }
         if (!pickedCardId.includes(cardId) && !cardScore.includes(cardId)) {
+            if(pickedCardId.length === 2) {
+                return;
+            } else {
             pickedCard.push(cardDeck3[cardId].name);
             pickedCardId.push(cardId);
             this.setAttribute('src', cardDeck3[cardId].img);
+            }
         }
 
         if (pickedCard.length === 2) {
