@@ -330,7 +330,7 @@ document.addEventListener('DOMContentLoaded', () => {
      */
     function callDeck() {
         for (let img in cardDeck) {
-            var card = document.createElement('img');
+            let card = document.createElement('img');
             card.setAttribute('src', 'assets/images/brew.png');
             card.setAttribute('data-id', img);
             card.classList.add('card_styling');
@@ -343,7 +343,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function callDeck2() {
         for (let img in cardDeck2) {
-            var card2 = document.createElement('img');
+            let card2 = document.createElement('img');
             card2.setAttribute('src', 'assets/images/heart.png');
             card2.setAttribute('data-id', img);
             card2.classList.add('card_styling');
@@ -356,7 +356,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function callDeck3() {
         for (let img in cardDeck3) {
-            var card3 = document.createElement('img');
+            let card3 = document.createElement('img');
             card3.setAttribute('src', 'assets/images/background.png');
             card3.setAttribute('data-id', img);
             card3.classList.add('card_styling');
