@@ -173,3 +173,19 @@ Game Screen testings:
     * Color inside rule box loads correctly depending on if the use wins or loses with the right text
     * New Game button works as intended and refreshes the page in order to restart the game
     * Social links in footer work and open in new tab
+
+# Bugs
+
+## turnCard() not working
+During early stages of building the turnCard function the image that loaded after finding a match were correct. However it didn't work to turn new cards from there. This was due to the card array that is being pushed with the amounts of cards found, but didn't reset so the condition of 'pickedCardId.length < 2' was true and therefore the else condition could not load.
+Error was fixed by resetting the value to an empty array inside the function that sets the pickedCardId value when 2 matches were found. 
+* ![IMAGE ALT TEXT HERE](../docs/screenshots/bug_1.png)
+
+## incrementAttempts() showing 'NaN'
+The incrementAttempts function showed NaN. This was fixed by using the parseInt in order to convert the taken innerHTML from the targeted element to a number.
+* ![IMAGE ALT TEXT HERE](../docs/screenshots/bug_2.png)
+
+## Hide content of home screen not working
+
+Due to a misspelling of the HTML id "gameBody" the styling request of 'none' could not load. 
+* ![IMAGE ALT TEXT HERE](../docs/screenshots/bug_3.png)
