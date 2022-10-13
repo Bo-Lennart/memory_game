@@ -266,7 +266,7 @@ To make a copy or ‘fork’ the repository:
 * <a href="https://www.geeksforgeeks.org/how-to-change-an-input-button-image-using-css/" target="_blank">Insert images as background on buttons</a>
 * <a href="https://www.delftstack.com/howto/css/css-font-border/" target="_blank">Text border</a>
 * <a href="https://stackoverflow.com/questions/4851657/call-break-in-nested-if-statements" target="_blank">Bug/console error fix when checking for a match</a>
-        * ![IMAGE ALT TEXT HERE](../docs/screenshots/game_screen_bug.png)
+* ![IMAGE ALT TEXT HERE](../docs/screenshots/game_screen_bug.png)
 
 ## Media
 
