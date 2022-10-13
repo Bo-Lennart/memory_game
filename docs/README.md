@@ -220,6 +220,23 @@ A lot of work went into applying this feedback since the whole logic of the game
 
 ## Content
 
-* <a href="https://www.youtube.com/watch?v=-tlb4tv4mC4&t=161s" target="_blank">Inspo for logic in JS</a>
+* <a href="" target="_blank">text</a>
+* <a href="" target="_blank">text</a>
 
 ## Media
+
+* <a href="https://www.youtube.com/watch?v=-tlb4tv4mC4&t=161s" target="_blank">Inspo for logic in JS</a>
+
+* <a href="https://pixabay.com/sv/illustrations/kamera-fickkamera-lins-fotografi-7279306/" target="_blank">Pixel Camera Image</a>
+* <a href="https://pixabay.com/sv/illustrations/soppa-matr%c3%a4tt-mat-sk%c3%a5l-borscht-7238060/" target="_blank">Pixel Soup Image</a>
+* <a href="https://pixabay.com/sv/illustrations/utomjordisk-fr%c3%a4mmande-liv-7440109/" target="_blank">Pixel Yoda Image</a>
+* <a href="https://pixabay.com/sv/illustrations/emoji-ansikte-h%c3%a4ftigt-solglas%c3%b6gon-7277841/" target="_blank">Pixel Smiley Image</a>
+* <a href="https://pixabay.com/sv/illustrations/regn-liten-droppe-natur-vatten-7236051/
+" target="_blank">Pixel Water Drop Image</a>
+* <a href="https://pixabay.com/sv/illustrations/v%c3%a4ckarklocka-klocka-8-bitars-pixel-7248174/" target="_blank">Pixel Alarm Clock Image</a>
+* <a href="https://pixabay.com/sv/illustrations/hastighet-hastighetsm%c3%a4tare-bil-7309042/
+" target="_blank">Pixel Timer Image</a>
+* <a href="https://pixabay.com/sv/illustrations/brev-papper-post-e-post-ikon-7289597/" target="_blank">Pixel Envelope Image</a>
+* <a href="https://pixabay.com/sv/illustrations/h%c3%a4xsk%c3%a5l-halloween-pixelkonst-pixel-6194394/" target="_blank">Pixel Brew Image</a>
+* <a href="https://pixabay.com/sv/illustrations/video-game-8-bitar-gamla-skolan-175621/" target="_blank">Pixel Robot Image</a>
+* <a href="https://pixabay.com/sv/illustrations/pixel-hj%c3%a4rta-hj%c3%a4rta-pixel-symbol-2779422/"target="_blank">Pixel Heart Image</a>
