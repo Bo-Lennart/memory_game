@@ -220,12 +220,12 @@ A lot of work went into applying this feedback since the whole logic of the game
 
 ## Content
 
+* <a href="https://www.youtube.com/watch?v=-tlb4tv4mC4&t=161s" target="_blank">Inspo for logic in JS</a>
+
 * <a href="" target="_blank">text</a>
 * <a href="" target="_blank">text</a>
 
 ## Media
-
-* <a href="https://www.youtube.com/watch?v=-tlb4tv4mC4&t=161s" target="_blank">Inspo for logic in JS</a>
 
 * <a href="https://pixabay.com/sv/illustrations/kamera-fickkamera-lins-fotografi-7279306/" target="_blank">Pixel Camera Image</a>
 * <a href="https://pixabay.com/sv/illustrations/soppa-matr%c3%a4tt-mat-sk%c3%a5l-borscht-7238060/" target="_blank">Pixel Soup Image</a>
