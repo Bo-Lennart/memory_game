@@ -32,13 +32,14 @@ You can access the site here: <a href="https://bo-lennart.github.io/memory_game/
     - [body.appendChild to create New Game button not working](#bodyappendchild-to-create-new-game-button-not-working)
     -[Minor bugs](#minor-bugs)
         - [Mentor Feedback](#mentor-feedback)
-- [Credits](#credits)
-    - [Content](#content)
-    - [Media](#media)
 - [Deployment](#deployment)
     - [Deploy to GitHub Pages](#deploy-to-github-pages)
     - [To Fork the Repository](#to-fork-the-repository)
     - [To create a Local Clone](#to-create-a-local-clone)
+- [Credits](#credits)
+    - [Content](#content)
+    - [Media](#media)
+
 
 
 # Project Goals
@@ -216,6 +217,38 @@ I had used a lot 'var' declarations druing building functions in order to access
 
 A lot of work went into applying this feedback since the whole logic of the game was built with the starting point of using 'var' inside functions. But eventually I found my way around this an managed to declare variables outside functions and apply the intended logic without 'var' declerations.
 
+# Deployment
+
+The site was deployed to GitHub pages.
+
+## Deploy to GitHub Pages
+1. Navigate to the settings tab in the GitHub repository
+2. Once in settings, navigate to the pages tab on the left of the page
+3. Under source, select branch ‘master’ and then click ‘save’
+4. Page will now automatically refresh and show a detailed ribbon display to indicate deployment
+
+![IMAGE ALT TEXT HERE](/docs/screenshots/deploy_page_steps.png) 
+
+## To Fork the Repository
+
+To make a copy or ‘fork’ the repository:
+
+1. Log into GitHub and locate repository
+2. On the right hand side of the page select the ‘fork’ option to create and copy of the original
+
+![IMAGE ALT TEXT HERE](/docs/screenshots/clone_process.png) 
+
+## To create a Local Clone
+
+1. Under the repository name, click on the ‘code’ tab
+2. In the clone box, HTTPS tab, click on the clipboard icon
+3. In your IED open GitBash
+4. Changed the current working directory to the location you want the cloned directory to be made
+5. Type ‘git clone’ and then paste the URL copied from GitHub
+6. press enter and the local clone will be created
+
+![IMAGE ALT TEXT HERE](/docs/screenshots/fork_github_project.png) 
+
 # Credits
 
 ## Content
@@ -249,34 +282,4 @@ A lot of work went into applying this feedback since the whole logic of the game
 * <a href="https://pixabay.com/sv/illustrations/video-game-8-bitar-gamla-skolan-175621/" target="_blank">Pixel Robot Image</a>
 * <a href="https://pixabay.com/sv/illustrations/pixel-hj%c3%a4rta-hj%c3%a4rta-pixel-symbol-2779422/" target="_blank">Pixel Heart Image</a>
 
-# Deployment
 
-The site was deployed to GitHub pages.
-
-## Deploy to GitHub Pages
-1. Navigate to the settings tab in the GitHub repository
-2. Once in settings, navigate to the pages tab on the left of the page
-3. Under source, select branch ‘master’ and then click ‘save’
-4. Page will now automatically refresh and show a detailed ribbon display to indicate deployment
-
-![IMAGE ALT TEXT HERE](/docs/screenshots/deploy_page_steps.png) 
-
-## To Fork the Repository
-
-To make a copy or ‘fork’ the repository:
-
-1. Log into GitHub and locate repository
-2. On the right hand side of the page select the ‘fork’ option to create and copy of the original
-
-![IMAGE ALT TEXT HERE](/docs/screenshots/clone_process.png) 
-
-## To create a Local Clone
-
-1. Under the repository name, click on the ‘code’ tab
-2. In the clone box, HTTPS tab, click on the clipboard icon
-3. In your IED open GitBash
-4. Changed the current working directory to the location you want the cloned directory to be made
-5. Type ‘git clone’ and then paste the URL copied from GitHub
-6. press enter and the local clone will be created
-
-![IMAGE ALT TEXT HERE](/docs/screenshots/fork_github_project.png) 
