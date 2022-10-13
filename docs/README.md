@@ -17,7 +17,9 @@ You can access the site here: <a href="https://bo-lennart.github.io/memory_game/
     - [Landing Page](#landing-page)
     - [Game Page](#game-page)
     - [Difficulty Levels](#difficulty-levels)
-- [Testing](#footer)
+    - [Game Over](#game-over)
+- [Technologies Used](#technologies-used)
+- [Testing](#testing)
     - [Bugs](#bugs)
     - [Validator Testing](#validator-testing)
 - [Deployment](#deployment)
@@ -95,3 +97,21 @@ The difficulty increases in terms of the amount of cards as well as the type of 
 | Robot | 24 | 8 |
 
 ![IMAGE ALT TEXT HERE](../docs/screenshots/deck_types.png)
+
+## Game Over
+
+When the game is finnished the user is directed to the game over screen. Depending on if the user wins or loses the screen will either display a green box with 'You won' text or a red box with 'You lost' text. 
+
+![IMAGE ALT TEXT HERE](../docs/screenshots/game_over_screen.png)
+
+# Technologies Used
+
+* HTML5 - Site structure and content
+* CSS3 - Styling
+* JavaScript - Site functionality, styling and logic.
+* Adobe Photoshop - Edit images and backgrounds
+* Gitpod
+* GitHub
+* Google Chrome DevTools - Used to debug, testing and try out css styling for screen responsiveness
+
+# Testing
