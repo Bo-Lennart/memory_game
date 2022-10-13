@@ -121,7 +121,7 @@ When the game is finished the user is directed to the game over screen. Dependin
 * HTML5 - Site structure and content
 * CSS3 - Styling
 * JavaScript - Site functionality, styling and logic.
-* Adobe Photoshop - Edit images and backgrounds
+* Adobe Photoshop - Edit images, backgrounds and all robot dock images (alphabet) with font (CarbonType)
 * Gitpod
 * GitHub
 * Google Chrome devtools - Used to debug, testing and try out css styling for screen responsiveness
