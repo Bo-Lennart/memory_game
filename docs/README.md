@@ -220,10 +220,18 @@ A lot of work went into applying this feedback since the whole logic of the game
 
 ## Content
 
-* <a href="https://www.youtube.com/watch?v=-tlb4tv4mC4&t=161s" target="_blank">Inspo for game logic in JS</a>
+* <a href="https://www.youtube.com/watch?v=-tlb4tv4mC4&t=161s" target="_blank">Inspiration for Memory Game logic in JS</a>
 
-* <a href="" target="_blank">text</a>
-* <a href="" target="_blank">text</a>
+* <a href="https://stackoverflow.com/questions/51037845/javascript-create-element-with-array" target="_blank">Creating element with array</a>
+* <a href="https://github.com/Bo-Lennart/love-maths/blob/main/assets/js/script.js" target="_blank">Inspiration for incrementAttempts() function</a>
+* <a href="https://bobbyhadz.com/blog/javascript-create-element-with-style-attribute" target="_blank">How to add styling through JavaScript</a>
+* <a href="https://www.w3schools.com/howto/howto_js_add_class.asp" target="_blank">Add class element through JavaScript</a>
+* <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow" target="_blank">Box Shadow in css</a>
+* <a href="https://github.com/Bo-Lennart/dinder/blob/main/index.html" target="_blank">Footer with social media links and styling from my previous portfolio project (Dinder)</a>
+* <a href="https://www.geeksforgeeks.org/how-to-change-an-input-button-image-using-css/" target="_blank">Insert images as background on buttons</a>
+* <a href="https://www.delftstack.com/howto/css/css-font-border/" target="_blank">Text border</a>
+* <a href="https://stackoverflow.com/questions/4851657/call-break-in-nested-if-statements" target="_blank">Bug/console error fix when checking for a match</a>
+* ![IMAGE ALT TEXT HERE](../docs/screenshots/game_screen_bug.png)
 
 ## Media
 
