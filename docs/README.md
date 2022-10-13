@@ -220,4 +220,6 @@ A lot of work went into applying this feedback since the whole logic of the game
 
 ## Content
 
+* <a href="https://www.youtube.com/watch?v=-tlb4tv4mC4&t=161s" target="_blank">Inspo for logic in JS</a>
+
 ## Media
