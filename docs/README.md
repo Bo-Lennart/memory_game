@@ -139,3 +139,19 @@ The Javascript file was validated with JSHint. There were warnings such as: coup
 Furthermore testing has been carried out on Performance, Accessibility, Best Practices and SEO via Lighthouse testing in Chrome DevTools. Both mobile and desktop performaces were tested.
 
 ![IMAGE ALT TEXT HERE](../docs/screenshots/lighthouse_testing.png)
+![IMAGE ALT TEXT HERE](../docs/screenshots/lighthouse_desktop.png)
+
+### Accessibility Testing
+
+In addition to the automated testing servicces above, manual testing included:
+
+* Firefox
+* Safari
+* Chrome
+
+Multiple Devices with devtools:
+
+* Iphone 13 pro
+* Ipad pro
+* Samsung galaxy s22
+* Macbook pro
