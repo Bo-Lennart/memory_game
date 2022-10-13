@@ -14,7 +14,7 @@ You can access the site here: <a href="https://bo-lennart.github.io/memory_game/
     - [User Stories](#user-stories)
     - [Color Scheme](#color-scheme)
 - [Features](#features)
-
+    - [Landing Page](#landing-page)
 - [Testing](#footer)
     - [Bugs](#bugs)
     - [Validator Testing](#validator-testing)
@@ -43,17 +43,15 @@ The aim of this project is to deliver an interactive game that is pleasing visua
 
 The **user** is any person who likes simple, digital games.
 
-| ID | ROLE | ACTION |
-|-----------------|:-------------|:---------------:|
+| ID | ROLE | ACTION | |
+|-----------------|:-------------|:---------------:|:---------------:|
 | 1 | User | As a user, I want to be able to play memory | So I can have some fun|
-| 2 | User | As a user, I want to navigate around the interface easily |
-| 3 | User | As a user, I want to be able to play the game across all devices |
-| 4 | User | As a user, I want the option of increased difficulty |
-| 5 | User | As a user, I want to be able to start the game when I am ready |
-| 6 | User | As a user, I want to be able to know my score |
-| 7 | User | As a user, I want to be able to start a new game when the current one ends |
-| 8 | User | As a user, I want the game to get progressively more difficult, so it's fun yet challenging |
-| 9 | User | As a user, I want the game end when I have to little tries left to win the level |
+| 2 | User | As a user, I want to be able to play the game across different devices | So I can access to game on the go and at home |
+| 3 | User | As a user, I want the option of increased difficulty | So it's fun yet challenging |
+| 4 | User | As a user, I want to be able to start the game when I am ready | So I can mentally prepare for the challenge |
+| 5 | User | As a user, I want to be able to know how many cards I have found | So I know how much is left for me to find |
+| 6 | User | As a user, I want to be able to start a new game when the current one ends | So I can try the challenge again or go to the next level |
+| 7 | User | As a user, I want the game to end when I have to little tries left to win the level | So I don't have to spend time on a doomed try |
 
 ## Color Scheme
 
@@ -61,10 +59,6 @@ The color palette is inspired of a playfulness in order to match the pixel figur
 
 ![IMAGE ALT TEXT HERE](../docs/screenshots/color_palette.png)
 ![IMAGE ALT TEXT HERE](../docs/screenshots/pixel_figures.png)
-
-The three difficulty levels are picked out of pixel images and they become less and move towards letters with different dificulty levels. The third level consits only of images.
-
-![IMAGE ALT TEXT HERE](../docs/screenshots/deck_types.png)
 
 # Features
 
@@ -81,3 +75,21 @@ The three difficulty levels are picked out of pixel images and they become less 
 ![IMAGE ALT TEXT HERE](../docs/screenshots/landing_page.png)
 
 ## Game Page
+
+Each difficulty level is based on the same functionality. 
+In the background of the page there are functions that count the attempts, how many cards founds, checks for matches, turn cards, display the correct images and checks if the game is to be interupted with game over or a win. A time out inside the turnCard-/2/3 function is added for the user so that they get a chance to memorise what cards they have turned.
+
+## Difficulty Levels
+
+The difficulty increases in terms of the amount of cards as well as the type of cards displayed. All decks have 20 tries to win.
+1. Brew Deck: 16 cards with only pixel pictures.
+2. Heart Deck: 20 cards with pixel pictures and alphabetical letters.
+3. Robot Deck: 24 cards with only letters in black. 
+
+| Pixel Deck | Amount of Cards | Failed Attempts Allowed |
+|-----------------|:-------------|:---------------:|
+| Brew | 16 | 12 | 
+| Heart | 20 | 10 |
+| Robot | 24 | 8 |
+
+![IMAGE ALT TEXT HERE](../docs/screenshots/deck_types.png)
