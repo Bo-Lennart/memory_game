@@ -125,6 +125,6 @@ This memory game has been tested through W3C HTML and W3C CSS validator. Minor e
 
 ![IMAGE ALT TEXT HERE](../docs/screenshots/css_validator.png)
 
-The Javascript file was validated with JSHint. There were warnings such as: couple of undefined varibles, missing semicolons and that bodies of 'for ins' should be wrappet inside if-statements. These have since then been taken care of and JSHint has come up clean.
+The Javascript file was validated with JSHint. There were warnings such as: couple of undefined varibles, missing semicolons and that bodies of 'for ins' should be wrappet inside if-statements. These have been taken care of and JSHint has come up clean.
 
 ![IMAGE ALT TEXT HERE](../docs/screenshots/jshint_testing.png)
