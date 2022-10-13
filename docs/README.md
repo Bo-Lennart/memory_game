@@ -33,13 +33,13 @@ You can access the site here: <a href="https://bo-lennart.github.io/memory_game/
     -[Minor bugs](#minor-bugs)
         - [Mentor Feedback](#mentor-feedback)
 - [Credits](#credits)
+    - [Content](#content)
+    - [Media](#media)
 - [Deployment](#deployment)
     - [Deploy to GitHub Pages](#deploy-to-github-pages)
     - [To Fork the Repository](#to-fork-the-repository)
     - [To create a Local Clone](#to-create-a-local-clone)
-- [Credits](#credits)
-    - [Content](#content)
-    - [Media](#media)
+
 
 # Project Goals
 
@@ -216,5 +216,8 @@ I had used a lot 'var' declarations druing building functions in order to access
 
 A lot of work went into applying this feedback since the whole logic of the game was built with the starting point of using 'var' inside functions. But eventually I found my way around this an managed to declare variables outside functions and apply the intended logic without 'var' declerations.
 
-#Credits
+# Credits
 
+## Content
+
+## Media
