@@ -24,7 +24,7 @@ You can access the site here: <a href="https://bo-lennart.github.io/memory_game/
         - [w3c Valiadion](#w3c-validation)
         - [JSHint Validation](#jshint-validation)
         - [Lighthouse Testing](#lighthouse-testing)
-        - [Accessibility Testing](#accessibility-testing)
+        - [Manual Testing](#manual-testing)
     - [Bugs](#bugs)
 - [Deployment](#deployment)
     - [Deploy to GitHub Pages](#deploy-to-github-pages)
@@ -142,9 +142,9 @@ Furthermore testing has been carried out on Performance, Accessibility, Best Pra
 ![IMAGE ALT TEXT HERE](../docs/screenshots/lighthouse_testing.png)
 ![IMAGE ALT TEXT HERE](../docs/screenshots/lighthouse_desktop.png)
 
-### Accessibility Testing
+### Manual Testing
 
-In addition to the automated testing servicces above, manual testing included:
+In addition to the automated testing services above, manual testing included:
 
 * Firefox
 * Safari
@@ -156,3 +156,9 @@ Multiple Devices with devtools:
 * Ipad pro
 * Samsung galaxy s22
 * Macbook pro
+
+Game Screen testings:
+
+* Home Screen
+* Game Screen
+* Game Over Screen
