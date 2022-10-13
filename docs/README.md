@@ -205,6 +205,6 @@ Apart from the above examples, other bugs occured during building the game. A co
 
 ### Mentor feedback
 
-I had used a lot 'var' declarations druing building functions in order to access variable inside functions from outside the scopes. My mentor informed me about that this is not how 'var' was intended to be used an reccomended me to change these to 'let' and 'const' declerations.
+I had used a lot 'var' declarations druing building functions in order to access variable inside functions from outside the scopes. My mentor informed me about that this is not how 'var' was intended and that this type of declaration belongs to "older type of coding".  e recomended me to change these to 'let' and 'const' declerations and work my way around using 'var' at all.
 
-A lot of work went into applying this feedback since the whole logic of the game was built with the starting point of using 'var' inside functions. But eventually i found my way around this an managed to declare variables outside functions and apply the intended logic without 'var' declerations.
+A lot of work went into applying this feedback since the whole logic of the game was built with the starting point of using 'var' inside functions. But eventually I found my way around this an managed to declare variables outside functions and apply the intended logic without 'var' declerations.
