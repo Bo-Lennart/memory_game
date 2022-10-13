@@ -1,6 +1,6 @@
 # Memory Game - Portfolio project 2 - JavaScript
 
-Memory Game is an interactive online home page where the use can play a simple card memory game, three levels with 20 tries to find all pairs.
+Memory Game is an interactive online home page where the user can play a simple card memory game, three levels with 20 tries to find all pairs.
 
 You can access the site here: <a href="https://bo-lennart.github.io/memory_game/" target="_blank">Memory Game Page</a>
 
@@ -50,10 +50,10 @@ The aim of this project is to deliver an interactive game that is pleasing visua
 
 ## Site Aims
 * To provide a simple interactive memory game with three levels of difficulty.
-* To create a system that challenges the use to replay and have a goal to clear all three difficulty levels.
+* To create a system that challenges the user to replay and have a goal to clear all three difficulty levels.
 * To provide full responsive design in order to be able to play the game from different devices, such as, mobile phone, tablets or desktop screens.
 * To provide an easy, understandable interactive experience for the use to navigate through the game.
-* To provide a challenging game that is enjoyable but still challengning so the use can return to try the different levels.
+* To provide a challenging game that is enjoyable but still challengning so the user can return to try the different levels.
 
 ## User Stories
 
@@ -82,25 +82,25 @@ The color palette is inspired of a playfulness in order to match the pixel figur
 
 1. At the top of the page the user finds a score count of how many cards they've found as well as how many attempts they've had.
 
-2. Below the score counts a small box is presented with a few rules, followed by a heading that asks the user to choos a deck in order to start the game.
+2. Below the score counts, a small box is presented with a few rules, followed by a heading that asks the user to choose a deck in order to start the game.
 
-3. On each deck, the user finds a level combined with the colors: green, orange and red to present the difficulty levels. 
+3. On each deck, the user finds a level combined with the colors: green, orange, and red to present the difficulty levels.
 
-4. The landing page finishes off with a short text about what potential cognitive benefits it could have to play memory followed by the footer with social links.
+4. The landing page finishes off with a short text about the potential cognitive benefits it could have to play memory followed by the footer with social links.
 
 ![IMAGE ALT TEXT HERE](../docs/screenshots/landing_page.png)
 
 ## Game Page
 
-Each difficulty level is based on the same functionality. 
-In the background of the page there are functions that count the attempts, how many cards founds, checks for matches, turn cards, display the correct images and checks if the game is to be interupted with game over or a win. A time out inside the turnCard-/2/3 function is added for the user so that they get a chance to memorise what cards they have turned.
+Each difficulty level is based on the same functionality.
+In the background of the page there are functions that count the attempts, how many cards were found; checks for matches, turn cards, display the correct images, and checks if the game is to be interrupted with a game over or a win. A time out inside the turnCard-/2/3 function is added for the user so that they get a chance to memorise what cards they have turned.
 
 ## Difficulty Levels
 
-The difficulty increases in terms of the amount of cards as well as the type of cards displayed. All decks have 20 tries to win.
+The difficulty increases in terms of the amount of cards as well as the type of cards displayed. All the decks have 20 tries to win.
 1. Brew Deck: 16 cards with only pixel pictures.
 2. Heart Deck: 20 cards with pixel pictures and alphabetical letters.
-3. Robot Deck: 24 cards with only letters in black. 
+3. Robot Deck: 24 cards with only letters in black.
 
 | Pixel Deck | Amount of Cards | Failed Attempts Allowed | lvl |
 |-----------------|:-------------|:---------------:|:---------------:|
@@ -112,7 +112,7 @@ The difficulty increases in terms of the amount of cards as well as the type of 
 
 ## Game Over
 
-When the game is finnished the user is directed to the game over screen. Depending on if the user wins or loses the screen will either display a green box with 'You won' text or a red box with 'You lost' text. 
+When the game is finished the user is directed to the game over screen. Depending on if the user wins or loses, the screen will either display a green box with 'You won' text or a red box with 'You lost' text.
 
 ![IMAGE ALT TEXT HERE](../docs/screenshots/game_over_screen.png)
 
@@ -124,7 +124,7 @@ When the game is finnished the user is directed to the game over screen. Dependi
 * Adobe Photoshop - Edit images and backgrounds
 * Gitpod
 * GitHub
-* Google Chrome DevTools - Used to debug, testing and try out css styling for screen responsiveness
+* Google Chrome devtools - Used to debug, testing and try out css styling for screen responsiveness
 
 # Testing
 
@@ -132,20 +132,20 @@ When the game is finnished the user is directed to the game over screen. Dependi
 
 
 ### w3c Validation
-This memory game has been tested through W3C HTML and W3C CSS validator. Minor errors where spotted and immediately corrected. These are documented below in [Bugs](#bugs)
+This memory game has been tested through W3C HTML and W3C CSS validators. Minor errors where spotted and immediately corrected. These are documented below in [Bugs](#bugs)
 
 ![IMAGE ALT TEXT HERE](../docs/screenshots/w3c_validator.png)
 
 ![IMAGE ALT TEXT HERE](../docs/screenshots/css_validator.png)
 
 ### JSHint Validation
-The Javascript file was validated with JSHint. There were warnings such as: couple of undefined varibles, missing semicolons and that bodies of 'for ins' should be wrappet inside if-statements. These have been taken care of and JSHint has come up clean.
+The Javascript file was validated with JSHint. There were warnings such as: couple of undefined variables, missing semicolons and that bodies of 'for ins' should be wrapped inside if-statements. These have been taken care of and JSHint has come up clean.
 
 ![IMAGE ALT TEXT HERE](../docs/screenshots/jshint_testing.png)
 
 ### Lighthouse Testing
 
-Furthermore testing has been carried out on Performance, Accessibility, Best Practices and SEO via Lighthouse testing in Chrome DevTools. Both mobile and desktop performaces were tested.
+Furthermore, testing has been carried out on Performance, Accessibility, Best Practices, and SEO via Lighthouse testing in Chrome DevTools. Both mobile and desktop performances were tested.
 
 ![IMAGE ALT TEXT HERE](../docs/screenshots/lighthouse_testing.png)
 ![IMAGE ALT TEXT HERE](../docs/screenshots/lighthouse_desktop.png)
@@ -165,16 +165,16 @@ Multiple Devices with devtools:
 * Samsung galaxy s22
 * Macbook pro
 
-Game Screen testings:
+Game Screen testing:
 
 * Home Screen
-    * Social Links work
-    * All card decks work on click and load the correct decks
-    * Social links in footer work and open in new tab
+   * Social Links work
+   * All card decks work on click and load the correct decks
+   * Social links in footer work and open in new tab
 * Game Screen
-    * All card turn correctly, wait for the time out and check for match as well as loading the correct background img again
-    * Social links in footer work and open in new tab
-    * During this testing an error occured when unusual clicking behavior was tried. This error was fixed by setting a return/break inside the function that tries to load the card name to check the match.
+   * All card turn correctly, wait for the time out and check for match as well as loading the correct background img again
+   * Social links in footer work and open in new tab
+   * During this testing, an error occurred when an unusual clicking behavior was tried. This error was fixed by setting a return/break inside the function that tries to load the card name to check the match.  
     * ![IMAGE ALT TEXT HERE](../docs/screenshots/game_screen_bug.png)
 
 * Game Over Screen
@@ -185,8 +185,8 @@ Game Screen testings:
 # Bugs
 
 ## turnCard() not working
-During early stages of building the turnCard function the image that loaded after finding a match were correct. However it didn't work to turn new cards from there. This was due to the card array that is being pushed with the amounts of cards found, but didn't reset so the condition of 'pickedCardId.length < 2' was true and therefore the else condition could not load.
-Error was fixed by resetting the value to an empty array inside the function that sets the pickedCardId value when 2 matches were found. 
+During the early stages of building the turnCard function, the image that loaded after finding a match was correct. However, it didn't work to turn new cards from there. This was due to the card array id(info) that is being pushed with the amount of cards found inside another array where the info then is taken from. But didn't reset so the condition of 'pickedCardId.length < 2' was true,  therefore the else condition could not load.
+Error was fixed by resetting the value to an empty array inside the function that sets the pickedCardId value when 2 matches were found.
 * ![IMAGE ALT TEXT HERE](../docs/screenshots/bug_1.png)
 
 ## incrementAttempts() showing 'NaN'
@@ -195,27 +195,28 @@ The incrementAttempts function showed NaN. This was fixed by using the parseInt 
 
 ## Hide content of home screen not working
 
-Due to a misspelling of the HTML id "gameBody" the styling request of 'none' could not load when deck choice had been made. 
+Due to a misspelling of the HTML id "gameBody" the styling request of 'none' could not load when a deck choice had been made.
 * ![IMAGE ALT TEXT HERE](../docs/screenshots/bug_3.png)
 
 ## body.appendChild to create New Game button not working
 
-During the build of the New Game button that is created when the game is finnished the 'getElementsByTagName' did not work and could not target the body.
+During the build of the New Game button that is created when the game is finished the 'getElementsByTagName' did not work and could not target the body.
 
 After a few minutes of google searching I found that someone had inserted an 'id' into the body to fix this issue.
 
-This worked and by setting an id to the body the appendChild could create the NewGame button. 
+This worked and by setting an id to the body the appendChild could create the NewGame button.
 * ![IMAGE ALT TEXT HERE](../docs/screenshots/bug_4.png)
+
 
 ## Minor bugs
 
-Apart from the above examples, other bugs occured during building the game. A couple of minor bugs within the same "type as mention above" such as misspelling, variables declared inside functions (and therefore could not be accessed globally) cause a lot of bugs here and there.
+Apart from the above examples, other bugs occurred during building the game. A couple of minor bugs within the same "type as mention above" such as misspelling, variables declared inside functions (and therefore could not be accessed globally) cause a lot of bugs here and there.
 
 ### Mentor Feedback
 
-I had used a lot 'var' declarations druing building functions in order to access variable inside functions from outside the scopes. My mentor informed me about that this is not how 'var' was intended and that this type of declaration belongs to "older type of coding".  He recomended me to change these to 'let' and 'const' declerations and work my way around using 'var' at all.
+I used a lot 'var' declarations during building functions in order to access variables inside functions from outside the scopes. My mentor informed me about that this is not how 'var' was intended and that this type of declaration belongs to "older type of coding". He recommended me to change these to 'let' and 'const' declarations and work my way around using 'var' at all.
 
-A lot of work went into applying this feedback since the whole logic of the game was built with the starting point of using 'var' inside functions. But eventually I found my way around this an managed to declare variables outside functions and apply the intended logic without 'var' declerations.
+A lot of work went into applying this feedback since the whole logic of the game was built with the starting point of using 'var' inside functions. But eventually I found my way around this and managed to declare variables outside functions and apply the intended logic without 'var' declarations.
 
 # Deployment
 
@@ -225,7 +226,7 @@ The site was deployed to GitHub pages.
 1. Navigate to the settings tab in the GitHub repository
 2. Once in settings, navigate to the pages tab on the left of the page
 3. Under source, select branch ‘master’ and then click ‘save’
-4. Page will now automatically refresh and show a detailed ribbon display to indicate deployment
+4. Page will now automatically refresh and show a detailed ribbon display to indicate deployment.
 
 ![IMAGE ALT TEXT HERE](/docs/screenshots/deploy_page_steps.png) 
 
@@ -233,19 +234,20 @@ The site was deployed to GitHub pages.
 
 To make a copy or ‘fork’ the repository:
 
-1. Log into GitHub and locate repository
-2. On the right hand side of the page select the ‘fork’ option to create and copy of the original
+1. Log into GitHub and locate the repository
+2. On the right hand side of the page, select the ‘fork’ option to create and copy of the original
 
 ![IMAGE ALT TEXT HERE](/docs/screenshots/clone_process.png) 
 
 ## To create a Local Clone
 
 1. Under the repository name, click on the ‘code’ tab
-2. In the clone box, HTTPS tab, click on the clipboard icon
+2. In the clone box, HTTPS tab, click on the clipboard icon.
 3. In your IED open GitBash
-4. Changed the current working directory to the location you want the cloned directory to be made
+4. Change the current working directory to the location you want the cloned directory to be made
 5. Type ‘git clone’ and then paste the URL copied from GitHub
 6. press enter and the local clone will be created
+
 
 ![IMAGE ALT TEXT HERE](/docs/screenshots/fork_github_project.png) 
 
