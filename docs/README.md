@@ -23,6 +23,7 @@ You can access the site here: <a href="https://bo-lennart.github.io/memory_game/
     - [Code Validation](#code-validation)
         - [w3c Valiadion](#w3c-validation)
         - [JSHint Validation](#jshint-validation)
+        - [Lighthouse Testing](#lighthouse-testing)
     - [Bugs](#bugs)
 - [Deployment](#deployment)
     - [Deploy to GitHub Pages](#deploy-to-github-pages)
@@ -132,3 +133,9 @@ This memory game has been tested through W3C HTML and W3C CSS validator. Minor e
 The Javascript file was validated with JSHint. There were warnings such as: couple of undefined varibles, missing semicolons and that bodies of 'for ins' should be wrappet inside if-statements. These have been taken care of and JSHint has come up clean.
 
 ![IMAGE ALT TEXT HERE](../docs/screenshots/jshint_testing.png)
+
+### Lighthouse Testing
+
+Furthermore testing has been carried out on Performance, Accessibility, Best Practices and SEO via Lighthouse testing in Chrome DevTools. Both mobile and desktop performaces were tested.
+
+![IMAGE ALT TEXT HERE](../docs/screenshots/lighthouse_testing.png)
