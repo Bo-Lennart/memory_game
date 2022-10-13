@@ -187,5 +187,5 @@ The incrementAttempts function showed NaN. This was fixed by using the parseInt 
 
 ## Hide content of home screen not working
 
-Due to a misspelling of the HTML id "gameBody" the styling request of 'none' could not load. 
+Due to a misspelling of the HTML id "gameBody" the styling request of 'none' could not load when deck choice had been made. 
 * ![IMAGE ALT TEXT HERE](../docs/screenshots/bug_3.png)
