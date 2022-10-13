@@ -189,3 +189,22 @@ The incrementAttempts function showed NaN. This was fixed by using the parseInt 
 
 Due to a misspelling of the HTML id "gameBody" the styling request of 'none' could not load when deck choice had been made. 
 * ![IMAGE ALT TEXT HERE](../docs/screenshots/bug_3.png)
+
+## body.appendChild to create New Game button not working
+
+During the build of the New Game button that is created when the game is finnished the 'getElementsByTagName' did not work and could not target the body.
+
+After a few minutes of google searching I found that someone had inserted an 'id' into the body to fix this issue.
+
+This worked and by setting an id to the body the appendChild could create the NewGame button. 
+* ![IMAGE ALT TEXT HERE](../docs/screenshots/bug_4.png)
+
+## Minor bugs
+
+Apart from the above examples, other bugs occured during building the game. A couple of minor bugs within the same solution such as misspelling, variables declared inside functions (and therefore could not be accessed globally) cause a lot of bugs here and there.
+
+### Mentor feedback
+
+I had used a lot 'var' declarations druing building functions in order to access variable inside functions from outside the scopes. My mentor informed me about that this is not how 'var' was intended to be used an reccomended me to change these to 'let' and 'const' declerations.
+
+A lot of work went into applying this feedback since the whole logic of the game was built with the starting point of using 'var' inside functions. But eventually i found my way around this an managed to declare variables outside functions and apply the intended logic without 'var' declerations.
