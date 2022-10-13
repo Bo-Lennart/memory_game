@@ -239,4 +239,5 @@ A lot of work went into applying this feedback since the whole logic of the game
 * <a href="https://pixabay.com/sv/illustrations/brev-papper-post-e-post-ikon-7289597/" target="_blank">Pixel Envelope Image</a>
 * <a href="https://pixabay.com/sv/illustrations/h%c3%a4xsk%c3%a5l-halloween-pixelkonst-pixel-6194394/" target="_blank">Pixel Brew Image</a>
 * <a href="https://pixabay.com/sv/illustrations/video-game-8-bitar-gamla-skolan-175621/" target="_blank">Pixel Robot Image</a>
-* <a href="https://pixabay.com/sv/illustrations/pixel-hj%c3%a4rta-hj%c3%a4rta-pixel-symbol-2779422/"target="_blank">Pixel Heart Image</a>
+* <a href="https://pixabay.com/sv/illustrations/pixel-hj%c3%a4rta-hj%c3%a4rta-pixel-symbol-2779422/" target="_blank">Pixel Heart Image</a>
+
