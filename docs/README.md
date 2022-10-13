@@ -24,6 +24,7 @@ You can access the site here: <a href="https://bo-lennart.github.io/memory_game/
         - [w3c Valiadion](#w3c-validation)
         - [JSHint Validation](#jshint-validation)
         - [Lighthouse Testing](#lighthouse-testing)
+        - [Accessibility Testing](#accessibility-testing)
     - [Bugs](#bugs)
 - [Deployment](#deployment)
     - [Deploy to GitHub Pages](#deploy-to-github-pages)
