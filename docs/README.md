@@ -30,6 +30,8 @@ You can access the site here: <a href="https://bo-lennart.github.io/memory_game/
     - [incrementAttempts() showing 'NaN'](#incrementattempts-showing-nan)
     - [Hide content of home screen not working](#hide-content-of-home-screen-not-working)
     - [body.appendChild to create New Game button not working](#bodyappendchild-to-create-new-game-button-not-working)
+    -[Minor bugs](#minor-bugs)
+        - [Mentor Feedback](#mentor-feedback)
 - [Deployment](#deployment)
     - [Deploy to GitHub Pages](#deploy-to-github-pages)
     - [To Fork the Repository](#to-fork-the-repository)
@@ -207,7 +209,7 @@ This worked and by setting an id to the body the appendChild could create the Ne
 
 Apart from the above examples, other bugs occured during building the game. A couple of minor bugs within the same "type as mention above" such as misspelling, variables declared inside functions (and therefore could not be accessed globally) cause a lot of bugs here and there.
 
-### Mentor feedback
+### Mentor Feedback
 
 I had used a lot 'var' declarations druing building functions in order to access variable inside functions from outside the scopes. My mentor informed me about that this is not how 'var' was intended and that this type of declaration belongs to "older type of coding".  e recomended me to change these to 'let' and 'const' declerations and work my way around using 'var' at all.
 
