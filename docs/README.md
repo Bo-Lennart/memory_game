@@ -66,3 +66,18 @@ The three difficulty levels are picked out of pixel images and they become less 
 
 ![IMAGE ALT TEXT HERE](../docs/screenshots/deck_types.png)
 
+# Features
+
+## Landing Page
+
+1. At the top of the page the user finds a score count of how many cards they've found as well as how many attempts they've had.
+
+2. Below the score counts a small box is presented with a few rules, followed by a heading that asks the user to choos a deck in order to start the game.
+
+3. On each deck, the user finds a level combined with the colors: green, orange and red to present the difficulty levels. 
+
+4. The landing page finishes off with a short text about what potential cognitive benefits it could have to play memory followed by the footer with social links.
+
+![IMAGE ALT TEXT HERE](../docs/screenshots/landing_page.png)
+
+## Game Page
