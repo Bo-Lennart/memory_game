@@ -165,7 +165,11 @@ Game Screen testings:
     * Social links in footer work and open in new tab
 * Game Screen
     * All card turn correctly, wait for the time out and check for match as well as loading the correct background img again
+    * Social links in footer work and open in new tab
     * During this testing an error occured when unusual clicking behavior was tried. This error was fixed by setting a return/break inside the function that tries to load the card name to check the match.
     * ![IMAGE ALT TEXT HERE](../docs/screenshots/game_screen_bug.png)
 
 * Game Over Screen
+    * Color inside rule box loads correctly depending on if the use wins or loses with the right text
+    * New Game button works as intended and refreshes the page in order to restart the game
+    * Social links in footer work and open in new tab
