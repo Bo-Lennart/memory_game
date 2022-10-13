@@ -91,11 +91,11 @@ The difficulty increases in terms of the amount of cards as well as the type of 
 2. Heart Deck: 20 cards with pixel pictures and alphabetical letters.
 3. Robot Deck: 24 cards with only letters in black. 
 
-| Pixel Deck | Amount of Cards | Failed Attempts Allowed |
-|-----------------|:-------------|:---------------:|
-| Brew | 16 | 12 | 
-| Heart | 20 | 10 |
-| Robot | 24 | 8 |
+| Pixel Deck | Amount of Cards | Failed Attempts Allowed | lvl |
+|-----------------|:-------------|:---------------:|:---------------:|
+| Brew | 16 | 12 | lvl 1 |
+| Heart | 20 | 10 | lvl 2 |
+| Robot | 24 | 8 | lvl 3 |
 
 ![IMAGE ALT TEXT HERE](../docs/screenshots/deck_types.png)
 
@@ -125,6 +125,6 @@ This memory game has been tested through W3C HTML and W3C CSS validator. Minor e
 
 ![IMAGE ALT TEXT HERE](../docs/screenshots/css_validator.png)
 
-The Javascript file was validated with JSHint. There were warnings such as: couple of undefined varibles, missing semicolons and that bodies of 'for ins' should be wrappet inside if statements. These have been taken care of and JSHint has come up clean.
+The Javascript file was validated with JSHint. There were warnings such as: couple of undefined varibles, missing semicolons and that bodies of 'for ins' should be wrappet inside if-statements. These have since then been taken care of and JSHint has come up clean.
 
 ![IMAGE ALT TEXT HERE](../docs/screenshots/jshint_testing.png)
