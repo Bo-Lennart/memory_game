@@ -15,6 +15,8 @@ You can access the site here: <a href="https://bo-lennart.github.io/memory_game/
     - [Color Scheme](#color-scheme)
 - [Features](#features)
     - [Landing Page](#landing-page)
+    - [Game Page](#game-page)
+    - [Difficulty Levels](#difficulty-levels)
 - [Testing](#footer)
     - [Bugs](#bugs)
     - [Validator Testing](#validator-testing)
