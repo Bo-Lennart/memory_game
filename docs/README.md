@@ -201,7 +201,7 @@ This worked and by setting an id to the body the appendChild could create the Ne
 
 ## Minor bugs
 
-Apart from the above examples, other bugs occured during building the game. A couple of minor bugs within the same solution such as misspelling, variables declared inside functions (and therefore could not be accessed globally) cause a lot of bugs here and there.
+Apart from the above examples, other bugs occured during building the game. A couple of minor bugs within the same "type as mention above" such as misspelling, variables declared inside functions (and therefore could not be accessed globally) cause a lot of bugs here and there.
 
 ### Mentor feedback
 
