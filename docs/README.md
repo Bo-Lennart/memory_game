@@ -160,5 +160,12 @@ Multiple Devices with devtools:
 Game Screen testings:
 
 * Home Screen
+    * Social Links work
+    * All card decks work on click and load the correct decks
+    * Social links in footer work and open in new tab
 * Game Screen
+    * All card turn correctly, wait for the time out and check for match as well as loading the correct background img again
+    * During this testing an error occured when unusual clicking behavior was tried. This error was fixed by setting a return/break inside the function that tries to load the card name to check the match.
+    * ![IMAGE ALT TEXT HERE](../docs/screenshots/game_screen_bug.png)
+
 * Game Over Screen
