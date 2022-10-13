@@ -119,4 +119,6 @@ When the game is finnished the user is directed to the game over screen. Dependi
 
 ## Code Validation
 
-The memory game has been tested through W3C HTML and W3C CSS validator. Minor errors where spotted and immediately corrected. These are documented below in (<#bugfixes>)
+This memory game has been tested through W3C HTML and W3C CSS validator. Minor errors where spotted and immediately corrected. These are documented below in [Bugs](#bugs)
+
+![IMAGE ALT TEXT HERE](../docs/screenshots/w3c_validator.png)
