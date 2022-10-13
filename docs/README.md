@@ -20,6 +20,7 @@ You can access the site here: <a href="https://bo-lennart.github.io/memory_game/
     - [Game Over](#game-over)
 - [Technologies Used](#technologies-used)
 - [Testing](#testing)
+    - [Code Validation](#code-validation)
     - [Bugs](#bugs)
     - [Validator Testing](#validator-testing)
 - [Deployment](#deployment)
@@ -115,3 +116,7 @@ When the game is finnished the user is directed to the game over screen. Dependi
 * Google Chrome DevTools - Used to debug, testing and try out css styling for screen responsiveness
 
 # Testing
+
+## Code Validation
+
+The memory game has been tested through W3C HTML and W3C CSS validator. Minor errors where spotted and immediately corrected. These are documented below in (<#bugfixes>)
