@@ -1,4 +1,4 @@
-# Pixel Memory Game - Portfolio project 2 - JavaScript
+# Pixel Memory Game - Portfolio project 2
 
 Pixel Memory Game is an interactive online home page where the user can play a simple card memory game, three levels with 20 tries to find all pairs.
 
