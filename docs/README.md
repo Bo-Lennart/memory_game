@@ -59,7 +59,7 @@ The aim of this project is to deliver an interactive game that is pleasing visua
 
 The **user** is any person who likes simple, digital games.
 
-| ID | ROLE | ACTION | |
+|  |  |  | |
 |-----------------|:-------------|:---------------:|:---------------:|
 | 1 | User | As a user, I want to be able to play memory | So I can have some fun|
 | 2 | User | As a user, I want to be able to play the game across different devices | So I can access to game on the go and at home |
